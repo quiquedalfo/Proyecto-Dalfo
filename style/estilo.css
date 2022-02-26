@@ -6,6 +6,10 @@
  #ffc0cb rosa suave
  #ffffff blanco
  */
+
+ body {
+     margin: 0px;
+ }
 .titulo{
     display: flex;
     flex-direction: column;
@@ -36,11 +40,12 @@ main{
     padding: 0;
     margin: 0;
     text-align: center;
+    overflow-x: visible;
 }
-#nav{
+nav{
     text-align: center;
 }
-#nav ul{
+nav ul{
     list-style-type: none;
     text-align: center;
     display: inline-block;
@@ -51,16 +56,7 @@ main{
     border-radius: 20px ;
     position: sticky;
 }
-#Index{
-    float: right;
-    background-color:pink;
-    font-size: 50px;
-    width: 300px; 
-    border: 5px #48331e solid;
-    border-radius: 10px;
-    margin: 10px;
-}
-#Productos{
+nav ul li {
     float: right;
     background-color:pink;
     font-size: 50px;
@@ -70,36 +66,6 @@ main{
     margin: 10px;
 }
 
-#Contacto{
-    float: right;
-    background-color:pink;
-    font-size: 50px;
-    width: 300px; 
-    border: 5px #48331e solid;
-    border-radius: 10px;
-    margin: 10px;
-
-}
-#Recetas{
-    float: right;
-    background-color:pink;
-    font-size: 50px;
-    width: 300px; 
-    border: 5px #48331e solid;
-    border-radius: 10px;
-    margin: 10px;
-
-}
-#Nosotros{
-    float: right;
-    background-color:pink;
-    font-size: 50px;
-    width: 300px; 
-    border: 5px #48331e solid;
-    border-radius: 10px;
-    margin: 10px;
-
-}
 a{
     text-decoration:none;
 }
@@ -325,5 +291,10 @@ padding: 0;
     articles div{
         display: flex; flex-direction: row;
     }
+    .carousel-item img {
+        margin: unset !important;
+    }
 }
-
+.carousel-item img {
+    margin: auto;
+}

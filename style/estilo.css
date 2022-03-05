@@ -6,7 +6,11 @@
  #ffc0cb rosa suave
  #ffffff blanco
  */
-
+:root{
+    --colordalfo: #ffffff;
+    --backgroudimgnav: url(../Imagenes/26.JPG);
+    --fontfamily: 'Dosis', sans-serif;
+}
  body {
      margin: 0px;
  }
@@ -18,22 +22,22 @@
     margin: 20px 0 0 0;
 }
 #Dalfo{
-    color: #ffffff; font-size: 100px; text-transform: uppercase; margin: 0;
+    color: var( --colordalfo); font-size: 100px; text-transform: uppercase; margin: 0; font-weight: 800;
 }
 h1{
-    font-family: 'Dosis', sans-serif; color:#48331e; font-size: 100px; margin: 0;
+    font-family: var(--fontfamily); color:#48331e; font-size: 100px; margin: 0;
 }
 h2{
-    font-family: 'Dosis', sans-serif; color:#48331e; text-align: center; font-size: 70px; margin: 0;
+    font-family: var(--fontfamily); color:#48331e; text-align: center; font-size: 70px; margin: 0;
 }
 h3{
-    font-family: 'Dosis', sans-serif; color:#48331e; font-size: 50px; text-align: center;display: inline-block;;
+    font-family: var(--fontfamily); color:#48331e; font-size: 50px; text-align: center;display: inline-block;;
 }
 h4{
-    font-family: 'Dosis', sans-serif; color:#48331e; text-align: center; font-size: 50px; margin: 0;
+    font-family: var(--fontfamily); color:#48331e; text-align: center; font-size: 50px; margin: 0;
 }
 p{
-    font-family: 'Dosis', sans-serif; font-size: 30px
+    font-family: var(--fontfamily); font-size: 30px
 }
 main{
     background-color:#e37d8b;
@@ -64,10 +68,20 @@ nav ul li {
     border: 5px #48331e solid;
     border-radius: 10px;
     margin: 10px;
+    font-family: var(--fontfamily);
+    color:#48331e;
+    font-weight: 100px;
+
+}
+
+nav ul :hover{
+    background-color: #dd5164;
 }
 
 a{
-    text-decoration:none;
+    color: #48331e;
+    font-weight: 600;
+    text-decoration: none;
 }
 .home{
     display: flex; justify-content: center; margin-top: 50px;
@@ -83,7 +97,7 @@ a{
 
 
 header{
-background-image:url(../Imagenes/26.JPG);
+background-image: var(--backgroudimgnav);
 background-size:contain;
 padding: 0;
 }
@@ -217,7 +231,30 @@ padding: 0;
 #RNAR{
     grid-area: RNAR;
 }
-
+@keyframes NOSI1 {
+    0%   {background-image: url(../Imagenes/logo-australia2.jpg)}
+    30%  {background-image: url(../Imagenes/Logo-australia.jpg)}
+    60%  {background-image: url(../Imagenes/IG.jpg)}
+    
+  }
+  
+  #NOSI1 {
+    width: 400px;
+    height: 400px;
+    background-image: url(../Imagenes/logo-australia2.jpg);
+    animation-name: NOSI1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+  }
+.w-25{
+    width: 513vw;
+    height: 15vw;
+    max-width: 800px;
+    max-height: 522px;
+    min-width: 400px;
+    min-height: 261px;
+}
 @media only screen and (max-width: 400px) {
     
     main{
@@ -228,13 +265,14 @@ padding: 0;
     #nav{
         text-align: center;
     }
+    
    header{
         background-image:url(../Imagenes/26.JPG);
         padding: 0;
         }
 
     h2{
-            font-family: 'Dosis', sans-serif; color:#48331e; text-align: center; font-size: 30px; margin: 0;
+            font-family: var(--fontfamily); color:#48331e; text-align: center; font-size: 30px; margin: 0;
         }
     .home{
             display:flex; flex-direction: column; justify-content: center; margin-top: 50px;
@@ -253,7 +291,7 @@ padding: 0;
             width: 162px; height:108px;
         }
     p{
-        font-family: 'Dosis', sans-serif; font-size: 20px; align-items: center; max-width: 400px;
+        font-family: var(--fontfamily); font-size: 20px; align-items: center; max-width: 400px;
     }
     #local{
         width: 300px; height: 225px;
@@ -293,6 +331,7 @@ padding: 0;
     }
     .carousel-item img {
         margin: unset !important;
+        height: auto;
     }
 }
 .carousel-item img {

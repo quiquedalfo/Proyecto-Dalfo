@@ -1,0 +1,37 @@
+nav{
+    text-align: center;
+    
+    ul{
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    flex-direction: row;
+    background-color:#8c6239;
+    margin: 5%;
+    padding: 2px;
+    border-radius: 20px ;
+    position: sticky;
+        & li {
+    float: right;
+    background-color:pink;
+    font-size: 50px;
+    width: 300px; 
+    border: 5px #48331e solid;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: $fontfamily;
+    color:#48331e;
+    font-weight: 100px;
+      
+        & :hover{
+        background-color: #dd5164;
+    }
+    }
+    }
+
+    a{
+    color: #48331e;
+    font-weight: 600;
+    text-decoration: none;
+    }
+}

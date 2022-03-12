@@ -6,91 +6,35 @@
  #ffc0cb rosa suave
  #ffffff blanco
  */
-.titulo {
-  display: flex;
-  flex-direction: column; }
-
-#torre {
-  margin: 20px 0 0 0; }
-
-#Dalfo {
-  color: #ffffff;
-  font-size: 100px;
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 800; }
-
-h1 {
-  font-family: "Dosis", sans-serif;
-  color: #48331e;
-  font-size: 100px;
-  margin: 0; }
-
-h2 {
-  font-family: "Dosis", sans-serif;
-  color: #48331e;
-  text-align: center;
-  font-size: 70px;
-  margin: 0; }
-
-h3 {
-  font-family: "Dosis", sans-serif;
-  color: #48331e;
-  font-size: 50px;
-  text-align: center;
-  display: inline-block; }
-
-h4 {
-  font-family: "Dosis", sans-serif;
-  color: #48331e;
-  text-align: center;
-  font-size: 50px;
-  margin: 0; }
-
-p {
-  font-family: "Dosis", sans-serif;
-  font-size: 30px; }
-
-main {
-  background-color: #e37d8b;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  overflow-x: visible; }
-
 nav {
   text-align: center; }
-
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  display: inline-block;
-  flex-direction: row;
-  background-color: #8c6239;
-  margin: 5%;
-  padding: 2px;
-  border-radius: 20px;
-  position: sticky; }
-
-nav ul li {
-  float: right;
-  background-color: pink;
-  font-size: 50px;
-  width: 300px;
-  border: 5px #48331e solid;
-  border-radius: 10px;
-  margin: 10px;
-  font-family: "Dosis", sans-serif;
-  color: #48331e;
-  font-weight: 100px; }
-
-nav ul :hover {
-  background-color: #dd5164; }
-
-a {
-  color: #48331e;
-  font-weight: 600;
-  text-decoration: none; }
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    flex-direction: row;
+    background-color: #8c6239;
+    margin: 5%;
+    padding: 2px;
+    border-radius: 20px;
+    position: sticky; }
+    nav ul li {
+      float: right;
+      background-color: pink;
+      font-size: 50px;
+      width: 300px;
+      border: 5px #48331e solid;
+      border-radius: 10px;
+      margin: 10px;
+      font-family: "Dosis", sans-serif;
+      color: #48331e;
+      font-weight: 100px; }
+      nav ul li :hover {
+        background-color: #dd5164; }
+  nav a {
+    color: #48331e;
+    font-weight: 600;
+    text-decoration: none; }
 
 .home {
   display: flex;
@@ -116,18 +60,6 @@ a {
   width: 400px;
   height: 600px; }
 
-header {
-  background-image: url(../Imagenes/26.JPG);
-  background-size: contain;
-  padding: 0; }
-
-#formulario {
-  background-color: white;
-  width: 400px;
-  height: fit-content;
-  display: inline-block;
-  align-items: center; }
-
 #river {
   width: 200px;
   height: 200px; }
@@ -140,6 +72,13 @@ header {
   display: inline-flex;
   flex-direction: row; }
 
+#formulario {
+  background-color: white;
+  width: 400px;
+  height: fit-content;
+  display: inline-block;
+  align-items: center; }
+
 #direccion {
   text-align: center; }
 
@@ -151,12 +90,34 @@ header {
 #local {
   display: inline-block; }
 
-#DDL {
-  font-size: 20px; }
-
 .pasos {
   display: flex;
   font-style: none; }
+
+.Recetas2 {
+  display: grid;
+  grid-template-columns: 600px 600px 600px;
+  grid-template-rows: 200px 600px 600px;
+  grid-template-areas: "R1 R1 R1"  "RDDL RNUT RNAR";
+  border: #48331e;
+  border-radius: 5px;
+  border-style: solid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 0; }
+
+#R1 {
+  grid-area: R1; }
+
+#RDDL {
+  grid-area: RDDL; }
+
+#RNUT {
+  grid-area: RNUT; }
+
+#RNAR {
+  grid-area: RNAR; }
 
 .sabores {
   display: grid;
@@ -215,31 +176,6 @@ header {
   grid-area: D3;
   border: #48331e;
   border-style: solid; }
-
-.Recetas2 {
-  display: grid;
-  grid-template-columns: 600px 600px 600px;
-  grid-template-rows: 200px 600px 600px;
-  grid-template-areas: "R1 R1 R1"  "RDDL RNUT RNAR";
-  border: #48331e;
-  border-radius: 5px;
-  border-style: solid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin: 0; }
-
-#R1 {
-  grid-area: R1; }
-
-#RDDL {
-  grid-area: RDDL; }
-
-#RNUT {
-  grid-area: RNUT; }
-
-#RNAR {
-  grid-area: RNAR; }
 
 @keyframes NOSI1 {
   0% {
@@ -348,3 +284,58 @@ header {
   .carousel-item img {
     margin: unset !important;
     height: auto; } }
+
+.titulo {
+  display: flex;
+  flex-direction: column; }
+  .titulo #torre {
+    margin: 20px 0 0 0; }
+  .titulo #Dalfo {
+    color: #ffffff;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 800; }
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  font-size: 100px;
+  margin: 0; }
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  text-align: center;
+  font-size: 70px;
+  margin: 0; }
+
+h3 {
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  font-size: 50px;
+  text-align: center;
+  display: inline-block; }
+
+h4 {
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  text-align: center;
+  font-size: 50px;
+  margin: 0; }
+
+p {
+  font-family: "Dosis", sans-serif;
+  font-size: 30px; }
+
+main {
+  background-color: #e37d8b;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  overflow-x: visible; }
+
+header {
+  background-image: url(../Imagenes/26.JPG);
+  background-size: contain;
+  padding: 0; }

@@ -1,0 +1,64 @@
+.sabores{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 200px 500px 500px;
+    grid-template-areas:
+    "A1 A1 A1" 
+    "B1 B2 B3"
+    "C1 C2 C3"
+    "D1 D2 D3";
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    
+}
+
+#A1{
+    grid-area: A1;
+}
+#B1{
+    grid-area: B1;
+    border: #48331e;
+    border-style: solid;
+}
+#B2{
+    grid-area: B2;
+    border: #48331e;
+    border-style: solid;
+}
+#B3{
+    grid-area: B3;
+    border: #48331e;
+    border-style: solid;
+}
+#C1{
+    grid-area: C1;
+    border: #48331e;
+    border-style: solid;
+}
+#C2{
+    grid-area: C2;
+    border: #48331e;
+    border-style: solid;
+}
+#C3{
+    grid-area: C3;
+    border: #48331e;
+    border-style: solid;
+}
+#D1{
+    grid-area: D1;
+    border: #48331e;
+    border-style: solid;
+}
+#D2{
+    grid-area: D2;
+    border: #48331e;
+    border-style: solid;
+}
+#D3{
+    grid-area: D3;
+    border: #48331e;
+    border-style: solid;
+}

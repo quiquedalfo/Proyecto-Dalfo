@@ -1,0 +1,79 @@
+@media only screen and (max-width: 400px) {
+    
+    main{
+        background-color:#e37d8b;
+        padding: 0;
+        margin: 0;
+    }
+    #nav{
+        text-align: center;
+    }
+    
+   header{
+        background-image:url(../Imagenes/26.JPG);
+        padding: 0;
+        }
+
+    h2{
+            font-family: $fontfamily; color:#48331e; text-align: center; font-size: 30px; margin: 0;
+        }
+    .home{
+            display:flex; flex-direction: column; justify-content: center; margin-top: 50px;
+        }
+            
+    #novedades{
+        border: none;
+        }
+    #promociones{
+        border: none;
+        }
+    #river{
+            width: 162px; height: 108px; 
+        }
+    #boca{
+            width: 162px; height:108px;
+        }
+    p{
+        font-family: $fontfamily; font-size: 20px; align-items: center; max-width: 400px;
+    }
+    #local{
+        width: 300px; height: 225px;
+    }
+    #formulario{
+        width: 300px; max-height: fit-content; border: #48331e;border-radius: 1px; border-style: solid;
+    }
+    #Recetas2{
+        display:flex; flex-direction: column; justify-content: center; width: fit-content;
+    }
+    #R1{
+        font-size: 25px;
+    }
+    #RDDL{
+        width: 300px; height: 300px;
+    }
+    #RNUT{
+        width: 300px; height: 300px;
+    }
+    #RNAR{
+        width: 300px; height: 300px;
+    }
+    #TNov{
+        display: inline-flex; width: 300px;
+    }
+    #TProm{
+        display: inline-flex; width: 300px;
+    }
+    #carousel-picture{
+        width: 1600px; height: auto;
+    }
+    .sabores{
+        display: flex; flex-direction: column;
+    }
+    articles div{
+        display: flex; flex-direction: row;
+    }
+    .carousel-item img {
+        margin: unset !important;
+        height: auto;
+    }
+}

@@ -8,19 +8,25 @@
  */
 
 @import "_variables.scss";
-
-
+@import "_nav.scss";
+@import "_home.scss";
+@import "_contacto.scss";
+@import "_recetas.scss";
+@import "_productos.scss";
+@import "_nosotros.scss";
+@import "_mediaq.scss";
 
 .titulo{
     display: flex;
     flex-direction: column;
+
+    #torre{
+        margin: 20px 0 0 0;}
+
+    #Dalfo{
+        color: $colordalfo; font-size: 100px; text-transform: uppercase; margin: 0; font-weight: 800;}
 }
-#torre{
-    margin: 20px 0 0 0;
-}
-#Dalfo{
-    color: $colordalfo; font-size: 100px; text-transform: uppercase; margin: 0; font-weight: 800;
-}
+
 h1{
     font-family: $fontfamily; color:#48331e; font-size: 100px; margin: 0;
 }
@@ -43,295 +49,11 @@ main{
     text-align: center;
     overflow-x: visible;
 }
-nav{
-    text-align: center;
-}
-nav ul{
-    list-style-type: none;
-    text-align: center;
-    display: inline-block;
-    flex-direction: row;
-    background-color:#8c6239;
-    margin: 5%;
-    padding: 2px;
-    border-radius: 20px ;
-    position: sticky;
-}
-nav ul li {
-    float: right;
-    background-color:pink;
-    font-size: 50px;
-    width: 300px; 
-    border: 5px #48331e solid;
-    border-radius: 10px;
-    margin: 10px;
-    font-family: $fontfamily;
-    color:#48331e;
-    font-weight: 100px;
-
-}
-
-nav ul :hover{
-    background-color: #dd5164;
-}
-
-a{
-    color: #48331e;
-    font-weight: 600;
-    text-decoration: none;
-}
-.home{
-    display: flex; justify-content: center; margin-top: 50px;
-}
-#novedades{
-    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%; margin-right: 20px; width: 400px; height: 600px;
-}
-
-#promociones{
-    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%;width: 400px; height: 600px;
-}
-
-
-
 header{
 background-image: $backgroudimgnav;
 background-size:contain;
 padding: 0;
 }
 
-#formulario{
-    background-color: rgb(255, 255, 255); width: 400px; height: fit-content; display: inline-block; align-items: center;
-}
 
-#river{
-    width: 200px; height: 200px; 
-}
-#boca{
-    width: 200px; height: 200px; 
-}
 
-#fotos{
-    display: inline-flex;
-    flex-direction: row;
-}
-
-#direccion{
-    text-align: center;
-}
-#seguinos{
-    font-size: 30px; display: block; text-align: center;
-}
-#local{
-    display: inline-block;
-}
-
-#DDL{
-    font-size: 20px;
-}
-
-.pasos{
-    display: flex;
-    font-style: none;
-
-}
-
-.sabores{
-    display: grid;
-    grid-template-columns: 500px 500px 500px;
-    grid-template-rows: 200px 500px 500px;
-    grid-template-areas:
-    "A1 A1 A1" 
-    "B1 B2 B3"
-    "C1 C2 C3"
-    "D1 D2 D3";
-    margin: 0;
-    justify-content: center;
-    text-align: center;
-    justify-items: center;
-    
-}
-
-#A1{
-    grid-area: A1;
-}
-#B1{
-    grid-area: B1;
-    border: #48331e;
-    border-style: solid;
-}
-#B2{
-    grid-area: B2;
-    border: #48331e;
-    border-style: solid;
-}
-#B3{
-    grid-area: B3;
-    border: #48331e;
-    border-style: solid;
-}
-#C1{
-    grid-area: C1;
-    border: #48331e;
-    border-style: solid;
-}
-#C2{
-    grid-area: C2;
-    border: #48331e;
-    border-style: solid;
-}
-#C3{
-    grid-area: C3;
-    border: #48331e;
-    border-style: solid;
-}
-#D1{
-    grid-area: D1;
-    border: #48331e;
-    border-style: solid;
-}
-#D2{
-    grid-area: D2;
-    border: #48331e;
-    border-style: solid;
-}
-#D3{
-    grid-area: D3;
-    border: #48331e;
-    border-style: solid;
-}
-
-.Recetas2{
-    display: grid;
-    grid-template-columns: 600px 600px 600px;
-    grid-template-rows: 200px 600px 600px;
-    grid-template-areas:
-    "R1 R1 R1" 
-    "RDDL RNUT RNAR";
-    border: #48331e;
-    border-radius: 5px;
-    border-style:solid ;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin: 0;
-}
-
-#R1{
-    grid-area: R1; 
-}
-#RDDL{
-    grid-area: RDDL;
-}
-#RNUT{
-    grid-area: RNUT;
-}
-#RNAR{
-    grid-area: RNAR;
-}
-@keyframes NOSI1 {
-    0%   {background-image: url(../Imagenes/logo-australia2.jpg)}
-    30%  {background-image: url(../Imagenes/Logo-australia.jpg)}
-    60%  {background-image: url(../Imagenes/IG.jpg)}
-    
-  }
-  
-  #NOSI1 {
-    width: 400px;
-    height: 400px;
-    background-image: url(../Imagenes/logo-australia2.jpg);
-    animation-name: NOSI1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    display: inline-block;
-  }
-.w-25{
-    width: 513vw;
-    height: 15vw;
-    max-width: 800px;
-    max-height: 522px;
-    min-width: 400px;
-    min-height: 261px;
-}
-
-.carousel-item img {
-    margin: auto;
-}
-@media only screen and (max-width: 400px) {
-    
-    main{
-        background-color:#e37d8b;
-        padding: 0;
-        margin: 0;
-    }
-    #nav{
-        text-align: center;
-    }
-    
-   header{
-        background-image:url(../Imagenes/26.JPG);
-        padding: 0;
-        }
-
-    h2{
-            font-family: $fontfamily; color:#48331e; text-align: center; font-size: 30px; margin: 0;
-        }
-    .home{
-            display:flex; flex-direction: column; justify-content: center; margin-top: 50px;
-        }
-            
-    #novedades{
-        border: none;
-        }
-    #promociones{
-        border: none;
-        }
-    #river{
-            width: 162px; height: 108px; 
-        }
-    #boca{
-            width: 162px; height:108px;
-        }
-    p{
-        font-family: $fontfamily; font-size: 20px; align-items: center; max-width: 400px;
-    }
-    #local{
-        width: 300px; height: 225px;
-    }
-    #formulario{
-        width: 300px; max-height: fit-content; border: #48331e;border-radius: 1px; border-style: solid;
-    }
-    #Recetas2{
-        display:flex; flex-direction: column; justify-content: center; width: fit-content;
-    }
-    #R1{
-        font-size: 25px;
-    }
-    #RDDL{
-        width: 300px; height: 300px;
-    }
-    #RNUT{
-        width: 300px; height: 300px;
-    }
-    #RNAR{
-        width: 300px; height: 300px;
-    }
-    #TNov{
-        display: inline-flex; width: 300px;
-    }
-    #TProm{
-        display: inline-flex; width: 300px;
-    }
-    #carousel-picture{
-        width: 1600px; height: auto;
-    }
-    .sabores{
-        display: flex; flex-direction: column;
-    }
-    articles div{
-        display: flex; flex-direction: row;
-    }
-    .carousel-item img {
-        margin: unset !important;
-        height: auto;
-    }
-}

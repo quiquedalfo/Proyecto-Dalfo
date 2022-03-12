@@ -1,0 +1,36 @@
+.pasos{
+    display: flex;
+    font-style: none;
+
+}
+
+
+
+.Recetas2{
+    display: grid;
+    grid-template-columns: 600px 600px 600px;
+    grid-template-rows: 200px 600px 600px;
+    grid-template-areas:
+    "R1 R1 R1" 
+    "RDDL RNUT RNAR";
+    border: #48331e;
+    border-radius: 5px;
+    border-style:solid ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+}
+
+#R1{
+    grid-area: R1; 
+}
+#RDDL{
+    grid-area: RDDL;
+}
+#RNUT{
+    grid-area: RNUT;
+}
+#RNAR{
+    grid-area: RNAR;
+}

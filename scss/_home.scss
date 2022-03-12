@@ -1,0 +1,21 @@
+.home{
+    display: flex; justify-content: center; margin-top: 50px;
+}
+#novedades{
+    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%; margin-right: 20px; width: 400px; height: 600px;
+}
+
+#promociones{
+    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%;width: 400px; height: 600px;
+}
+#river{
+    width: 200px; height: 200px; 
+}
+#boca{
+    width: 200px; height: 200px; 
+}
+
+#fotos{
+    display: inline-flex;
+    flex-direction: row;
+}

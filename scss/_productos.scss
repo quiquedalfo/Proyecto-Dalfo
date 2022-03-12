@@ -13,52 +13,47 @@
     justify-items: center;
     
 }
-
+.gridcomponente{
+    border: #48331e;
+    border-style: solid;
+    font-size: 30px;
+}
 #A1{
     grid-area: A1;
 }
 #B1{
+    @extend .gridcomponente;
     grid-area: B1;
-    border: #48331e;
-    border-style: solid;
 }
 #B2{
+    @extend .gridcomponente;
     grid-area: B2;
-    border: #48331e;
-    border-style: solid;
 }
 #B3{
+    @extend .gridcomponente;
     grid-area: B3;
-    border: #48331e;
-    border-style: solid;
 }
 #C1{
+    @extend .gridcomponente;
     grid-area: C1;
-    border: #48331e;
-    border-style: solid;
 }
 #C2{
+    @extend .gridcomponente;
     grid-area: C2;
-    border: #48331e;
-    border-style: solid;
 }
 #C3{
+    @extend .gridcomponente;
     grid-area: C3;
-    border: #48331e;
-    border-style: solid;
 }
 #D1{
+    @extend .gridcomponente;
     grid-area: D1;
-    border: #48331e;
-    border-style: solid;
 }
 #D2{
+    @extend .gridcomponente;
     grid-area: D2;
-    border: #48331e;
-    border-style: solid;
 }
 #D3{
+    @extend .gridcomponente;
     grid-area: D3;
-    border: #48331e;
-    border-style: solid;
 }

@@ -16,6 +16,16 @@
 @import "_nosotros.scss";
 @import "_mediaq.scss";
 
+@mixin estilotexto ($fontfamily, $fontsize, $fontcolor){
+    font-family: $fontfamily;
+    color: $fontcolor; 
+    text-align: center; 
+    font-size: $fontsize; 
+    margin: 0;
+}
+
+
+
 .titulo{
     display: flex;
     flex-direction: column;
@@ -28,19 +38,21 @@
 }
 
 h1{
-    font-family: $fontfamily; color:#48331e; font-size: 100px; margin: 0;
+    @include estilotexto($fontfamily, 100px , #48331e);
+    text-align: none
 }
 h2{
-    font-family: $fontfamily; color:#48331e; text-align: center; font-size: 70px; margin: 0;
+    @include estilotexto($fontfamily, 70px , #48331e)
 }
 h3{
-    font-family: $fontfamily; color:#48331e; font-size: 50px; text-align: center;display: inline-block;;
+    @include estilotexto($fontfamily, 50px , #48331e);
+    display: inline-block;
 }
 h4{
-    font-family: $fontfamily; color:#48331e; text-align: center; font-size: 50px; margin: 0;
+    @include estilotexto($fontfamily, 40px , #48331e)
 }
 p{
-    font-family: $fontfamily; font-size: 30px
+    @include estilotexto($fontfamily, 40px , black)
 }
 main{
     background-color:#e37d8b;

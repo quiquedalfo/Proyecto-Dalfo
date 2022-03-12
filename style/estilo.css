@@ -129,53 +129,40 @@ nav {
   text-align: center;
   justify-items: center; }
 
+.gridcomponente, #B1, #B2, #B3, #C1, #C2, #C3, #D1, #D2, #D3 {
+  border: #48331e;
+  border-style: solid;
+  font-size: 30px; }
+
 #A1 {
   grid-area: A1; }
 
 #B1 {
-  grid-area: B1;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: B1; }
 
 #B2 {
-  grid-area: B2;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: B2; }
 
 #B3 {
-  grid-area: B3;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: B3; }
 
 #C1 {
-  grid-area: C1;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: C1; }
 
 #C2 {
-  grid-area: C2;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: C2; }
 
 #C3 {
-  grid-area: C3;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: C3; }
 
 #D1 {
-  grid-area: D1;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: D1; }
 
 #D2 {
-  grid-area: D2;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: D2; }
 
 #D3 {
-  grid-area: D3;
-  border: #48331e;
-  border-style: solid; }
+  grid-area: D3; }
 
 @keyframes NOSI1 {
   0% {
@@ -300,8 +287,10 @@ nav {
 h1 {
   font-family: "Dosis", sans-serif;
   color: #48331e;
+  text-align: center;
   font-size: 100px;
-  margin: 0; }
+  margin: 0;
+  text-align: none; }
 
 h2 {
   font-family: "Dosis", sans-serif;
@@ -313,20 +302,24 @@ h2 {
 h3 {
   font-family: "Dosis", sans-serif;
   color: #48331e;
-  font-size: 50px;
   text-align: center;
+  font-size: 50px;
+  margin: 0;
   display: inline-block; }
 
 h4 {
   font-family: "Dosis", sans-serif;
   color: #48331e;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   margin: 0; }
 
 p {
   font-family: "Dosis", sans-serif;
-  font-size: 30px; }
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  margin: 0; }
 
 main {
   background-color: #e37d8b;

@@ -90,10 +90,6 @@ nav {
 #local {
   display: inline-block; }
 
-.pasos {
-  display: flex;
-  font-style: none; }
-
 .Recetas2 {
   display: grid;
   grid-template-columns: 600px 600px 600px;
@@ -106,6 +102,9 @@ nav {
   justify-items: center;
   align-items: center;
   margin: 0; }
+  .Recetas2 .pasos {
+    display: flex;
+    font-style: none; }
 
 #R1 {
   grid-area: R1; }

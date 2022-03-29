@@ -16,6 +16,7 @@
 @import "_nosotros.scss";
 @import "_mediaq.scss";
 @import "_botones.scss";
+@import "_footer.scss";
 
 @mixin estilotexto ($fontfamily, $fontsize, $fontcolor){
     font-family: $fontfamily;
@@ -32,28 +33,27 @@
     flex-direction: column;
 
     #torre{
-        margin: 20px 0 0 0;}
-
+        margin: 2% 0 0 0;
+        width: 20%;
+        height: auto;
+    }
     #Dalfo{
-        color: $colordalfo; font-size: 100px; text-transform: uppercase; margin: 0; font-weight: 800;}
+        color: $colordalfo; font-size: 10vw; text-transform: uppercase; margin: 0; font-weight: 800; font-family: $fontfamily;
+    }
 }
 
-h1{
-    @include estilotexto($fontfamily, 100px , #48331e);
-    text-align: none
-}
 h2{
-    @include estilotexto($fontfamily, 70px , #48331e)
+    @include estilotexto($fontfamily, 5vw , #48331e)
 }
 h3{
-    @include estilotexto($fontfamily, 50px , #48331e);
+    @include estilotexto($fontfamily, 5vw , #48331e);
     display: inline-block;
 }
 h4{
-    @include estilotexto($fontfamily, 40px , #48331e)
+    @include estilotexto($fontfamily, 3vw , #48331e)
 }
 p{
-    @include estilotexto($fontfamily, 40px , black)
+    @include estilotexto($fontfamily, 2vw , black)
 }
 main{
     background-color:#e37d8b;
@@ -61,11 +61,6 @@ main{
     margin: 0;
     text-align: center;
     overflow-x: visible;
-}
-header{
-background-image: $backgroudimgnav;
-background-size:contain;
-padding: 0;
 }
 .bombones{
     width: 40px;

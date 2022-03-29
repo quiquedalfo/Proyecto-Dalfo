@@ -1,37 +1,32 @@
 nav{
     text-align: center;
-    
+        
     ul{
     list-style-type: none;
-    text-align: center;
-    display: inline-block;
-    flex-direction: row;
-    background-color:#8c6239;
-    margin: 5%;
-    padding: 2px;
-    border-radius: 20px ;
-    position: sticky;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 4%;
+    background-image: $backgroudimgnav;
+    background-size: 25%;
+
         & li {
-    float: right;
-    background-color:pink;
-    font-size: 50px;
-    width: 300px; 
-    border: 5px #48331e solid;
-    border-radius: 10px;
-    margin: 10px;
-    font-family: $fontfamily;
-    color:#48331e;
-    font-weight: 100px;
-      
-        & :hover{
-        background-color: #dd5164;
-    }
+        background-color:pink;
+        font-size: 3vw;
+        width: auto; 
+        border: 0.3vw #48331e solid;
+        border-radius: 15px;
+        font-family: $fontfamily;
+        color:#48331e;
+        padding: 0.4vw 1.5vw 0.4vw 1.5vw;
+    
     }
     }
 
-    a{
+    & a{
     color: #48331e;
-    font-weight: 600;
     text-decoration: none;
+    font-weight: 600;
     }
 }

@@ -2,20 +2,21 @@
     display: flex; justify-content: center; margin-top: 50px;
 }
 #novedades{
-    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%; margin-right: 20px; width: 400px; height: 600px;
+    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%; margin-right: 20px;
 }
 
 #promociones{
-    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%;width: 400px; height: 600px;
+    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%;
 }
 #river{
-    width: 200px; height: 200px; 
+    width: 15vw;
 }
 #boca{
-    width: 200px; height: 200px; 
+    width: 15vw;
 }
 
 #fotos{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
+    justify-content: center;
 }

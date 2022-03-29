@@ -10,31 +10,26 @@ nav {
   text-align: center; }
   nav ul {
     list-style-type: none;
-    text-align: center;
-    display: inline-block;
-    flex-direction: row;
-    background-color: #8c6239;
-    margin: 5%;
-    padding: 2px;
-    border-radius: 20px;
-    position: sticky; }
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 4%;
+    background-image: url(../Imagenes/fondo.JPG);
+    background-size: 25%; }
     nav ul li {
-      float: right;
       background-color: pink;
-      font-size: 50px;
-      width: 300px;
-      border: 5px #48331e solid;
-      border-radius: 10px;
-      margin: 10px;
+      font-size: 3vw;
+      width: auto;
+      border: 0.3vw #48331e solid;
+      border-radius: 15px;
       font-family: "Dosis", sans-serif;
       color: #48331e;
-      font-weight: 100px; }
-      nav ul li :hover {
-        background-color: #dd5164; }
+      padding: 0.4vw 1.5vw 0.4vw 1.5vw; }
   nav a {
     color: #48331e;
-    font-weight: 600;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 600; }
 
 .home {
   display: flex;
@@ -47,30 +42,25 @@ nav {
   border-style: double;
   border-radius: 5px;
   width: 35%;
-  margin-right: 20px;
-  width: 400px;
-  height: 600px; }
+  margin-right: 20px; }
 
 #promociones {
   text-align: center;
   border-color: #48331e;
   border-style: double;
   border-radius: 5px;
-  width: 35%;
-  width: 400px;
-  height: 600px; }
+  width: 35%; }
 
 #river {
-  width: 200px;
-  height: 200px; }
+  width: 15vw; }
 
 #boca {
-  width: 200px;
-  height: 200px; }
+  width: 15vw; }
 
 #fotos {
-  display: inline-flex;
-  flex-direction: row; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 #formulario {
   background-color: white;
@@ -323,38 +313,40 @@ nav {
   transform: scaleX(1);
   transform-origin: bottom left; }
 
+footer {
+  background-color: #ffc0cb;
+  margin: 0%;
+  padding: 0%; }
+  footer ul {
+    margin: 0%; }
+
 .titulo {
   display: flex;
   flex-direction: column; }
   .titulo #torre {
-    margin: 20px 0 0 0; }
+    margin: 2% 0 0 0;
+    width: 20%;
+    height: auto; }
   .titulo #Dalfo {
     color: #ffffff;
-    font-size: 100px;
+    font-size: 10vw;
     text-transform: uppercase;
     margin: 0;
-    font-weight: 800; }
-
-h1 {
-  font-family: "Dosis", sans-serif;
-  color: #48331e;
-  text-align: center;
-  font-size: 100px;
-  margin: 0;
-  text-align: none; }
+    font-weight: 800;
+    font-family: "Dosis", sans-serif; }
 
 h2 {
   font-family: "Dosis", sans-serif;
   color: #48331e;
   text-align: center;
-  font-size: 70px;
+  font-size: 5vw;
   margin: 0; }
 
 h3 {
   font-family: "Dosis", sans-serif;
   color: #48331e;
   text-align: center;
-  font-size: 50px;
+  font-size: 5vw;
   margin: 0;
   display: inline-block; }
 
@@ -362,14 +354,14 @@ h4 {
   font-family: "Dosis", sans-serif;
   color: #48331e;
   text-align: center;
-  font-size: 40px;
+  font-size: 3vw;
   margin: 0; }
 
 p {
   font-family: "Dosis", sans-serif;
   color: black;
   text-align: center;
-  font-size: 40px;
+  font-size: 2vw;
   margin: 0; }
 
 main {
@@ -378,11 +370,6 @@ main {
   margin: 0;
   text-align: center;
   overflow-x: visible; }
-
-header {
-  background-image: url(../Imagenes/26.JPG);
-  background-size: contain;
-  padding: 0; }
 
 .bombones {
   width: 40px; }

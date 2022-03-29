@@ -120,15 +120,15 @@ nav {
 
 .sabores {
   display: grid;
-  grid-template-columns: 500px 500px 500px;
-  grid-template-rows: 200px 500px 500px;
-  grid-template-areas: "A1 A1 A1"  "B1 B2 B3" "C1 C2 C3" "D1 D2 D3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 500px 500px 500px;
+  grid-template-areas: "A1 A1 A1"  "B1 B2 B3" "C1 C2 C3" "D1 D2 D3" "E1 E2 E3";
   margin: 0;
   justify-content: center;
   text-align: center;
   justify-items: center; }
 
-.gridcomponente, #B1, #B2, #B3, #C1, #C2, #C3, #D1, #D2, #D3 {
+.gridcomponente, #B1, #B2, #B3, #C1, #C2, #C3, #D1, #D2, #D3, #E1, #E2, #E3 {
   border: #48331e;
   border-style: solid;
   font-size: 30px; }
@@ -162,6 +162,15 @@ nav {
 
 #D3 {
   grid-area: D3; }
+
+#E1 {
+  grid-area: E1; }
+
+#E2 {
+  grid-area: E2; }
+
+#E3 {
+  grid-area: E3; }
 
 @keyframes NOSI1 {
   0% {
@@ -271,6 +280,49 @@ nav {
     margin: unset !important;
     height: auto; } }
 
+/* From cssbuttons.io by @alexmaracinaru */
+.cta {
+  border: none;
+  background: none; }
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase; }
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease; }
+
+.cta:hover svg {
+  transform: translateX(0); }
+
+.cta:active svg {
+  transform: scale(0.9); }
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px; }
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
 .titulo {
   display: flex;
   flex-direction: column; }
@@ -331,3 +383,6 @@ header {
   background-image: url(../Imagenes/26.JPG);
   background-size: contain;
   padding: 0; }
+
+.bombones {
+  width: 40px; }

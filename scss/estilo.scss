@@ -15,6 +15,7 @@
 @import "_productos.scss";
 @import "_nosotros.scss";
 @import "_mediaq.scss";
+@import "_botones.scss";
 
 @mixin estilotexto ($fontfamily, $fontsize, $fontcolor){
     font-family: $fontfamily;
@@ -66,6 +67,8 @@ background-image: $backgroudimgnav;
 background-size:contain;
 padding: 0;
 }
-
+.bombones{
+    width: 40px;
+}
 
 

@@ -1,6 +1,21 @@
 .home{
     display: flex; justify-content: center; margin-top: 50px;
 }
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+
+    #torre{
+        margin: 2% 0 0 0;
+        width: 20%;
+        height: auto;
+    }
+    #Dalfo{
+        color: $colordalfo; font-size: 10vw; text-transform: uppercase; margin: 0; font-weight: 800; font-family: $fontfamily;
+    }
+}
+
 #novedades{
     text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%; margin-right: 20px;
 }

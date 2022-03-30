@@ -3,26 +3,31 @@
     30%  {background-image: url(../Imagenes/Logo-australia.jpg)}
     60%  {background-image: url(../Imagenes/IG.jpg)}
     
-  }
-  
-  #NOSI1 {
-    width: 400px;
-    height: 400px;
-    background-image: url(../Imagenes/logo-australia2.jpg);
-    animation-name: NOSI1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    display: inline-block;
-  }
-.w-25{
-    width: 513vw;
-    height: 15vw;
-    max-width: 800px;
-    max-height: 522px;
-    min-width: 400px;
-    min-height: 261px;
 }
+div{
+    #NOSI1 {
+        width: 400px;
+        height: 400px;
+        background-image: url(../Imagenes/logo-australia2.jpg);
+        animation-name: NOSI1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        display: inline-block;
+    }
+}
+
 
 .carousel-item img {
     margin: auto;
+    width: 15vw;
+    height: auto;
 }
+
+#NOSI2{
+    
+    img{
+        width: 25vw;
+        height: auto;
+    }
+    
+  }

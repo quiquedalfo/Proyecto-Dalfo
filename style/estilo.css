@@ -36,6 +36,21 @@ nav {
   justify-content: center;
   margin-top: 50px; }
 
+.titulo {
+  display: flex;
+  flex-direction: column; }
+  .titulo #torre {
+    margin: 2% 0 0 0;
+    width: 20%;
+    height: auto; }
+  .titulo #Dalfo {
+    color: #ffffff;
+    font-size: 10vw;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 800;
+    font-family: "Dosis", sans-serif; }
+
 #novedades {
   text-align: center;
   border-color: #48331e;
@@ -67,7 +82,8 @@ nav {
   width: 400px;
   height: fit-content;
   display: inline-block;
-  align-items: center; }
+  align-items: center;
+  font-family: "Dosis", sans-serif; }
 
 #direccion {
   text-align: center; }
@@ -111,7 +127,7 @@ nav {
 .sabores {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 200px 500px 500px 500px;
+  grid-template-rows: 200px 35vw 35vw 35vw;
   grid-template-areas: "A1 A1 A1"  "B1 B2 B3" "C1 C2 C3" "D1 D2 D3" "E1 E2 E3";
   margin: 0;
   justify-content: center;
@@ -119,12 +135,25 @@ nav {
   justify-items: center; }
 
 .gridcomponente, #B1, #B2, #B3, #C1, #C2, #C3, #D1, #D2, #D3, #E1, #E2, #E3 {
-  border: #48331e;
-  border-style: solid;
-  font-size: 30px; }
+  border: #48331e; }
+  .gridcomponente img, #B1 img, #B2 img, #B3 img, #C1 img, #C2 img, #C3 img, #D1 img, #D2 img, #D3 img, #E1 img, #E2 img, #E3 img {
+    width: 15vw;
+    height: auto; }
+  .gridcomponente p, #B1 p, #B2 p, #B3 p, #C1 p, #C2 p, #C3 p, #D1 p, #D2 p, #D3 p, #E1 p, #E2 p, #E3 p {
+    font-size: 2vw;
+    padding-top: 3%; }
 
 #A1 {
-  grid-area: A1; }
+  grid-area: A1;
+  padding-top: 2%; }
+  #A1 div {
+    padding-top: 2vw; }
+  #A1 select {
+    height: auto;
+    width: 16vw;
+    font-size: 3vw;
+    font-family: "Dosis", sans-serif;
+    text-align: center; }
 
 #B1 {
   grid-area: B1; }
@@ -162,6 +191,9 @@ nav {
 #E3 {
   grid-area: E3; }
 
+#Agregar {
+  padding-top: 10%; }
+
 @keyframes NOSI1 {
   0% {
     background-image: url(../Imagenes/logo-australia2.jpg); }
@@ -170,7 +202,7 @@ nav {
   60% {
     background-image: url(../Imagenes/IG.jpg); } }
 
-#NOSI1 {
+div #NOSI1 {
   width: 400px;
   height: 400px;
   background-image: url(../Imagenes/logo-australia2.jpg);
@@ -179,16 +211,68 @@ nav {
   animation-iteration-count: infinite;
   display: inline-block; }
 
-.w-25 {
-  width: 513vw;
-  height: 15vw;
-  max-width: 800px;
-  max-height: 522px;
-  min-width: 400px;
-  min-height: 261px; }
-
 .carousel-item img {
-  margin: auto; }
+  margin: auto;
+  width: 15vw;
+  height: auto; }
+
+#NOSI2 img {
+  width: 25vw;
+  height: auto; }
+
+/* From cssbuttons.io by @alexmaracinaru */
+.cta {
+  border: none;
+  background: none; }
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase; }
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease; }
+
+.cta:hover svg {
+  transform: translateX(0); }
+
+.cta:active svg {
+  transform: scale(0.9); }
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px; }
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+footer {
+  background-color: #ffc0cb;
+  height: 5vw;
+  margin: 0%;
+  padding: 0%; }
+  footer #Copy {
+    padding: 1.5%;
+    font-size: 2vw; }
+  footer ul {
+    margin: 0%; }
 
 @media only screen and (max-width: 400px) {
   main {
@@ -269,71 +353,6 @@ nav {
   .carousel-item img {
     margin: unset !important;
     height: auto; } }
-
-/* From cssbuttons.io by @alexmaracinaru */
-.cta {
-  border: none;
-  background: none; }
-
-.cta span {
-  padding-bottom: 7px;
-  letter-spacing: 4px;
-  font-size: 10px;
-  padding-right: 15px;
-  text-transform: uppercase; }
-
-.cta svg {
-  transform: translateX(-8px);
-  transition: all 0.3s ease; }
-
-.cta:hover svg {
-  transform: translateX(0); }
-
-.cta:active svg {
-  transform: scale(0.9); }
-
-.hover-underline-animation {
-  position: relative;
-  color: black;
-  padding-bottom: 20px; }
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1.5px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out; }
-
-.cta:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left; }
-
-footer {
-  background-color: #ffc0cb;
-  margin: 0%;
-  padding: 0%; }
-  footer ul {
-    margin: 0%; }
-
-.titulo {
-  display: flex;
-  flex-direction: column; }
-  .titulo #torre {
-    margin: 2% 0 0 0;
-    width: 20%;
-    height: auto; }
-  .titulo #Dalfo {
-    color: #ffffff;
-    font-size: 10vw;
-    text-transform: uppercase;
-    margin: 0;
-    font-weight: 800;
-    font-family: "Dosis", sans-serif; }
 
 h2 {
   font-family: "Dosis", sans-serif;

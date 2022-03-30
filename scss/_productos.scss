@@ -1,7 +1,7 @@
 .sabores{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 500px 500px 500px;
+    grid-template-rows: 200px 35vw 35vw 35vw;
     grid-template-areas:
     "A1 A1 A1" 
     "B1 B2 B3"
@@ -16,11 +16,30 @@
 }
 .gridcomponente{
     border: #48331e;
-    border-style: solid;
-    font-size: 30px;
+    img{
+        width: 15vw;
+        height: auto;
+    }
+    p{
+        font-size: 2vw;
+        padding-top: 3%;
+    }
+
 }
 #A1{
     grid-area: A1;
+    padding-top: 2%;
+    div{
+        padding-top: 2vw;
+    }
+    select{
+        height: auto;
+        width: 16vw;
+        font-size: 3vw;
+        font-family: $fontfamily;
+        text-align: center;
+
+        }
 }
 #B1{
     @extend .gridcomponente;
@@ -69,4 +88,8 @@
 #E3{
     @extend .gridcomponente;
     grid-area: E3;
+}
+
+#Agregar{
+    padding-top: 10%;
 }

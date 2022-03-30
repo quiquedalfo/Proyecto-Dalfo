@@ -14,9 +14,9 @@
 @import "_recetas.scss";
 @import "_productos.scss";
 @import "_nosotros.scss";
-@import "_mediaq.scss";
 @import "_botones.scss";
 @import "_footer.scss";
+@import "_mediaq.scss";
 
 @mixin estilotexto ($fontfamily, $fontsize, $fontcolor){
     font-family: $fontfamily;
@@ -24,22 +24,6 @@
     text-align: center; 
     font-size: $fontsize; 
     margin: 0;
-}
-
-
-
-.titulo{
-    display: flex;
-    flex-direction: column;
-
-    #torre{
-        margin: 2% 0 0 0;
-        width: 20%;
-        height: auto;
-    }
-    #Dalfo{
-        color: $colordalfo; font-size: 10vw; text-transform: uppercase; margin: 0; font-weight: 800; font-family: $fontfamily;
-    }
 }
 
 h2{

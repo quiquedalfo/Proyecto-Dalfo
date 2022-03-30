@@ -14,22 +14,22 @@
 
 <body> <a name="top"></a>
     <header>
-        <nav id="nav">
-            <ul id="nav ul">
+        <nav>
+            <ul>
             <li id="Index">
-                <a href="../index.html">Index</a>
+                <a href="../index.html" >Index</a>
             </li>
             <li id="Nosotros">
-                <a href="../Paginas/Nosotros.html">Nosotros</a>
+                <a href="Nosotros.html">Nosotros</a>
             </li>
             <li id="Productos">
-                <a href="../Paginas/Productos.html">Productos</a>
+                <a href="Productos.html">Productos</a>
             </li>
             <li id="Recetas">
-                <a href="../Paginas/Recetas.html">Recetas</a>
+                <a href="Recetas.html">Recetas</a>
             </li>
             <li id="Contacto">
-                <a href="../Paginas/Contacto.html">Contacto</a>
+                <a href="Contacto.html">Contacto</a>
             </li>
             </ul>
         </nav>
@@ -38,19 +38,22 @@
     
     <main>
         <section class="titulo">
-        <article><img src="../Imagenes/Logo torre.png" width="173" height="136" id="torre">
-        <h1 id="Dalfo"> Dalfó</h1>
-        <h2>El bastión del chocolate</h2>
-        </article>
-        </section>
+            <article><img src="../Imagenes/Logo torre.png" id="torre">
+            <h1 id="Dalfo"> Dalfó</h1>
+            <h2 id="Bastion"> El bastión del chocolate</h2>
+            </article>
+          </section>
         
         <section class="sabores">
             <articles id="A1">
                 <h2>Arma tu cajita!</h2>
+                <div>
                 <select name="" id="Tam">
                 <option value="1">12 unidades</option>
                 <option value="2">25 unidades</option>
                 </select>
+                <span class="focus"></span>
+                </div>
             </articles>
             <articles id="B1">
                 <h3>Café</h3>
@@ -61,32 +64,37 @@
                 <p>
                     Chocolate semi-amargo lacteado relleno de ganache de café.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="B2">
                 <h3>Limon</h3>
                 <div>
-                <img src="../Imagenes/Ingredientes/Limon.jpg" alt="" width="200" height="130">
-                <img src="../Imagenes/Bombones/Lim.jpg" alt="" width="200" height="130">
+                <img src="../Imagenes/Ingredientes/Limon.jpg"  alt="">
+                <img src="../Imagenes/Bombones/Lim.jpg" alt="">
                 </div>
                 <p>
                     Chocolate blanco relleno de ganache de chocolate blanco y coulis de limon.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
             </articles>
             <articles id="B3">
                 <h3>Manzana</h3>
@@ -98,14 +106,16 @@
                 <p>
                     Chocolate blanco relleno de mermelada de manzana.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="C1">
                 <h3>Nuez</h3>
@@ -117,14 +127,16 @@
                 <p>
                     Chocolate blanco relleno ganache de chocolate blanco y nuez tostada.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="C2">
                 <h3>Nutella</h3>
@@ -136,14 +148,16 @@
                 <p>
                     Chocolate con leche relleno de nutella.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="C3">
                 <h3>Toffee</h3>
@@ -155,14 +169,16 @@
                 <p>
                     Chocolate con leche relleno toffee y maní.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="D1">
                 <h3>Frutos rojos</h3>
@@ -174,14 +190,16 @@
                 <p>
                     Chocolate con leche relleno de ganache de chocolate con leche y mermelada de frutos rojos.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="D2">
                 <h3>Caju</h3>
@@ -193,14 +211,16 @@
                 <p>
                     Chocolate con blanco relleno de ganachde de chocolate blanco y castañas de caju caramelizadas con miel.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="D3">
                 <h3>Almendra</h3>
@@ -212,14 +232,16 @@
                 <p>
                     Chocolate semi-amargo lacteado relleno de ganache de chocolate semi-amargo lacteado y almendras caramelizadas.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="E1">
                 <h3>Naranja</h3>
@@ -231,14 +253,16 @@
                 <p>
                     Chocolate semi-amargo lacteado relleno de mermelada de Naranjas.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="E2">
                 <h3>Banana</h3>
@@ -250,14 +274,16 @@
                 <p>
                     Chocolate semi-amargo lacteado relleno de ganache de banana y chocolate blanco, y dulce de leche.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
             <articles id="E3">
                 <h3>Dulce de leche</h3>
@@ -269,27 +295,31 @@
                 <p>
                     Chocolate semi-amargo lacteado relleno de Dulce de leche.
                 </p>
-                <input type="number" id="bombones" name="bombones"
-                 min="1" max="8">
-                <button class="cta">
-                    <span class="hover-underline-animation"> Agregar </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
+                <div id="Agregar">
+                    <input type="number" id="bombones" name="bombones"
+                     min="1" max="8">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Agregar </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                    </div>
             </articles>
         </section>
       
     </main>
     <footer> 
-        <ul>
-            <li>
-                2022 Copyright
-                <button> 
-                    <a href= #top > Top</a>
-                </button>
-            </li>
-        </ul>
+        <div id="Copy">
+            <ul>
+                <li>
+                    2022 Copyright
+                    <button> 
+                        <a href= #top > Top</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     

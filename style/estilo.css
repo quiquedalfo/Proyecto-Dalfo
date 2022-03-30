@@ -98,31 +98,53 @@ nav {
 
 .Recetas2 {
   display: grid;
-  grid-template-columns: 600px 600px 600px;
-  grid-template-rows: 200px 600px 600px;
-  grid-template-areas: "R1 R1 R1"  "RDDL RNUT RNAR";
+  grid-template-columns: 95%;
+  grid-template-rows: 30vw 30vw 30vw 30vw;
+  grid-template-areas: "R1"  "RDDL" "RNAR" "RNUT";
   border: #48331e;
-  border-radius: 5px;
+  border-radius: 1vw;
   border-style: solid;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  margin: 0; }
+  margin: 2vw; }
   .Recetas2 .pasos {
     display: flex;
     font-style: none; }
 
 #R1 {
-  grid-area: R1; }
+  grid-area: R1;
+  display: flex; }
 
 #RDDL {
   grid-area: RDDL; }
+  #RDDL table {
+    display: inline-block;
+    padding-top: 2vw; }
+  #RDDL img {
+    width: 20vw;
+    height: auto;
+    padding-top: 2vw; }
 
 #RNUT {
   grid-area: RNUT; }
+  #RNUT table {
+    display: inline-block;
+    padding-top: 2vw; }
+  #RNUT img {
+    width: 20vw;
+    height: auto;
+    padding-top: 2vw; }
 
 #RNAR {
   grid-area: RNAR; }
+  #RNAR table {
+    display: inline-block;
+    padding-top: 2vw; }
+  #RNAR img {
+    width: 20vw;
+    height: auto;
+    padding-top: 2vw; }
 
 .sabores {
   display: grid;
@@ -203,24 +225,37 @@ nav {
     background-image: url(../Imagenes/IG.jpg); } }
 
 div #NOSI1 {
-  width: 400px;
-  height: 400px;
+  width: 25vw;
+  height: 25vw;
   background-image: url(../Imagenes/logo-australia2.jpg);
+  background-size: contain;
   animation-name: NOSI1;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 2vw;
+  margin-bottom: 2vw; }
 
 .carousel-item img {
   margin: auto;
   width: 15vw;
-  height: auto; }
+  height: auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw; }
 
-#NOSI2 img {
-  width: 25vw;
-  height: auto; }
+#NOSI2 {
+  margin-top: 2vw;
+  padding-bottom: 2vw; }
+  #NOSI2 img {
+    width: 25vw;
+    height: auto; }
 
 h2 {
+  font-weight: 600; }
+
+h3 {
+  padding-top: 1vw;
+  padding-bottom: 2vw;
   font-weight: 600; }
 
 /* From cssbuttons.io by @alexmaracinaru */
@@ -270,7 +305,9 @@ footer {
   background-color: #ffc0cb;
   height: 5vw;
   margin: 0%;
-  padding: 0%; }
+  padding: 0%;
+  padding-top: 2vw;
+  padding-bottom: 2vw; }
   footer #Copy {
     padding: 1.5%;
     font-size: 2vw; }

@@ -6,13 +6,16 @@
 }
 div{
     #NOSI1 {
-        width: 400px;
-        height: 400px;
+        width: 25vw;
+        height: 25vw;
         background-image: url(../Imagenes/logo-australia2.jpg);
+        background-size: contain;
         animation-name: NOSI1;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         display: inline-block;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
     }
 }
 
@@ -21,6 +24,8 @@ div{
     margin: auto;
     width: 15vw;
     height: auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 #NOSI2{
@@ -29,9 +34,16 @@ div{
         width: 25vw;
         height: auto;
     }
+    margin-top: 2vw;
+    padding-bottom: 2vw;
     
   }
 
 h2{
+    font-weight: 600;
+}
+h3{
+    padding-top: 1vw;
+    padding-bottom: 2vw;
     font-weight: 600;
 }

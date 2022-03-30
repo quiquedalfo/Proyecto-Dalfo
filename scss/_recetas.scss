@@ -1,33 +1,67 @@
 .Recetas2{
     display: grid;
-    grid-template-columns: 600px 600px 600px;
-    grid-template-rows: 200px 600px 600px;
+    grid-template-columns: 95%;
+    grid-template-rows: 30vw 30vw 30vw 30vw;
     grid-template-areas:
-    "R1 R1 R1" 
-    "RDDL RNUT RNAR";
+    "R1" 
+    "RDDL"
+    "RNAR"
+    "RNUT"; 
     border: #48331e;
-    border-radius: 5px;
+    border-radius: 1vw;
     border-style:solid ;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin: 0;
+    margin: 2vw;
+    
    
-    .pasos{
-        display: flex;
-        font-style: none;
+.pasos{
+    display: flex;
+    font-style: none;
     }
 }
 
 #R1{
     grid-area: R1;
+    display: flex;
 }
 #RDDL{
     grid-area: RDDL;
+    table{
+        display: inline-block;
+        padding-top: 2vw;
+
+    }
+    img{
+        width: 20vw;
+        height: auto;
+        padding-top: 2vw;
+    }
 }
 #RNUT{
     grid-area: RNUT;
+    table{
+        display: inline-block;
+        padding-top: 2vw;
+
+    }
+    img{
+        width: 20vw;
+        height: auto;
+        padding-top: 2vw;
+    }
 }
 #RNAR{
     grid-area: RNAR;
+    table{
+        display: inline-block;
+        padding-top: 2vw;
+
+    }
+    img{
+        width: 20vw;
+        height: auto;
+        padding-top: 2vw;
+    }
 }

@@ -1,14 +1,14 @@
 @keyframes NOSI1 {
-    0%   {background-image: url(../Imagenes/logo-australia2.jpg)}
-    30%  {background-image: url(../Imagenes/Logo-australia.jpg)}
-    60%  {background-image: url(../Imagenes/IG.jpg)}
+    0%   {background-image: url(../imagenes/logo-australia2.jpg)}
+    30%  {background-image: url(../imagenes/Logo-australia.jpg)}
+    60%  {background-image: url(../imagenes/IG.jpg)}
     
 }
 div{
     #NOSI1 {
         width: 25vw;
         height: 25vw;
-        background-image: url(../Imagenes/logo-australia2.jpg);
+        background-image: url(../imagenes/logo-australia2.jpg);
         background-size: contain;
         animation-name: NOSI1;
         animation-duration: 10s;

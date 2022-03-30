@@ -220,6 +220,9 @@ div #NOSI1 {
   width: 25vw;
   height: auto; }
 
+h2 {
+  font-weight: 600; }
+
 /* From cssbuttons.io by @alexmaracinaru */
 .cta {
   border: none;

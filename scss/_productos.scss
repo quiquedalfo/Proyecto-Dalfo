@@ -3,7 +3,7 @@
 .sabores{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 35vw 35vw 35vw;
+    grid-template-rows: 20vw 35vw 35vw 35vw;
     grid-template-areas:
     "A1 A1 A1" 
     "B1 B2 B3"
@@ -30,7 +30,7 @@
 }
 #A1{
     grid-area: A1;
-    padding-top: 2%;
+    padding-top: 5%;
     div{
         padding-top: 2vw;
     }

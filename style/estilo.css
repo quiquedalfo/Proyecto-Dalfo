@@ -6,6 +6,9 @@
  #ffc0cb rosa suave
  #ffffff blanco
  */
+body {
+  margin: 0; }
+
 nav {
   text-align: center; }
   nav ul {
@@ -57,20 +60,26 @@ nav {
   border-style: double;
   border-radius: 5px;
   width: 35%;
-  margin-right: 20px; }
+  margin-right: 20px;
+  padding-bottom: 3vw;
+  margin-bottom: 3vw; }
 
 #promociones {
   text-align: center;
   border-color: #48331e;
   border-style: double;
   border-radius: 5px;
-  width: 35%; }
+  width: 35%;
+  padding-bottom: 3vw;
+  margin-bottom: 3vw; }
 
 #river {
-  width: 15vw; }
+  width: 15vw;
+  padding-top: 2vw; }
 
 #boca {
-  width: 15vw; }
+  width: 15vw;
+  padding-top: 2vw; }
 
 #fotos {
   display: flex;
@@ -308,11 +317,22 @@ footer {
   padding: 0%;
   padding-top: 2vw;
   padding-bottom: 2vw; }
-  footer #Copy {
+  footer i {
     padding: 1.5%;
-    font-size: 2vw; }
+    display: flex;
+    font-size: 1vw; }
   footer ul {
     margin: 0%; }
+  footer #topof {
+    display: flex;
+    font-size: 2vw;
+    font-style: none;
+    font-family: "Dosis", sans-serif;
+    color: #48331e;
+    background: #ffc0cb;
+    font-weight: 600;
+    border-radius: 1vw;
+    float: right; }
 
 @media only screen and (max-width: 400px) {
   main {

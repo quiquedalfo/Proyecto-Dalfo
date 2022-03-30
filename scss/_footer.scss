@@ -5,12 +5,26 @@ footer{
     padding: 0%;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    #Copy{
+    i{
         padding: 1.5%;
-        font-size: 2vw;
+        display: flex;
+        font-size: 1vw;
     }
     ul{
         margin: 0%;
+
+        
         
     }
+    #topof {
+            display: flex;
+            font-size: 2vw;
+            font-style: none;
+            font-family: $fontfamily;
+            color: $colormarronlogo;
+            background: $colorrosaclaro;
+            font-weight: 600;
+            border-radius: 1vw;
+            float: right;
+         }
 }

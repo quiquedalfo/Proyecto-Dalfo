@@ -88,28 +88,39 @@ nav {
 
 #formulario {
   background-color: white;
-  width: 400px;
-  height: fit-content;
+  width: 40vw;
+  height: auto;
   display: inline-block;
   align-items: center;
-  font-family: "Dosis", sans-serif; }
+  font-family: "Dosis", sans-serif;
+  max-width: 400px; }
+  #formulario fieldset {
+    position: static; }
 
 #direccion {
   text-align: center; }
 
 #seguinos {
-  font-size: 30px;
+  font-size: 3vw;
   display: block;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2vw; }
 
 #local {
-  display: inline-block; }
+  display: inline-block;
+  width: 40vw;
+  height: 30vw;
+  padding-bottom: 1vw; }
+
+#info {
+  font-size: 2vw;
+  padding-bottom: 3vw; }
 
 .Recetas2 {
   display: grid;
   grid-template-columns: 95%;
-  grid-template-rows: 30vw 30vw 30vw 30vw;
-  grid-template-areas: "R1"  "RDDL" "RNAR" "RNUT";
+  grid-template-rows: 15vw 70vw;
+  grid-template-areas: "R1"  "RDDL";
   border: #48331e;
   border-radius: 1vw;
   border-style: solid;
@@ -119,38 +130,30 @@ nav {
   margin: 2vw; }
   .Recetas2 .pasos {
     display: flex;
-    font-style: none; }
+    font-style: none;
+    text-align: center;
+    flex-direction: column; }
 
-#R1 {
-  grid-area: R1;
-  display: flex; }
+#aprender {
+  width: 100%; }
+  #aprender #R1 {
+    grid-area: R1;
+    display: flex;
+    padding-bottom: 2vw;
+    width: max-content; }
 
 #RDDL {
-  grid-area: RDDL; }
+  grid-area: RDDL;
+  padding-bottom: 10vw;
+  width: max-content; }
+  #RDDL h4 {
+    padding-bottom: 2vw;
+    font-size: 5vw; }
   #RDDL table {
     display: inline-block;
-    padding-top: 2vw; }
+    padding-top: 2vw;
+    font-size: 2vw; }
   #RDDL img {
-    width: 20vw;
-    height: auto;
-    padding-top: 2vw; }
-
-#RNUT {
-  grid-area: RNUT; }
-  #RNUT table {
-    display: inline-block;
-    padding-top: 2vw; }
-  #RNUT img {
-    width: 20vw;
-    height: auto;
-    padding-top: 2vw; }
-
-#RNAR {
-  grid-area: RNAR; }
-  #RNAR table {
-    display: inline-block;
-    padding-top: 2vw; }
-  #RNAR img {
     width: 20vw;
     height: auto;
     padding-top: 2vw; }
@@ -335,85 +338,61 @@ footer {
     float: right; }
 
 @media only screen and (max-width: 400px) {
-  main {
-    background-color: #e37d8b;
-    padding: 0;
-    margin: 0; }
-  #nav {
-    text-align: center; }
-  header {
-    background-image: url(../imagenes/26.JPG);
-    padding: 0; }
-  h2 {
-    font-family: "Dosis", sans-serif;
-    color: #48331e;
-    text-align: center;
-    font-size: 30px;
-    margin: 0; }
   .home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 50px; }
-  #novedades {
-    border: none; }
-  #promociones {
-    border: none; }
-  #river {
-    width: 162px;
-    height: 108px; }
-  #boca {
-    width: 162px;
-    height: 108px; }
-  p {
-    font-family: "Dosis", sans-serif;
-    font-size: 20px;
-    align-items: center;
-    max-width: 400px; }
-  #local {
-    width: 300px;
-    height: 225px; }
-  #formulario {
-    width: 300px;
-    max-height: fit-content;
-    border: #48331e;
-    border-radius: 1px;
-    border-style: solid; }
-  #Recetas2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: fit-content; }
-  #R1 {
-    font-size: 25px; }
-  #RDDL {
-    width: 300px;
-    height: 300px; }
-  #RNUT {
-    width: 300px;
-    height: 300px; }
-  #RNAR {
-    width: 300px;
-    height: 300px; }
-  #TNov {
-    display: inline-flex;
-    width: 300px; }
-  #TProm {
-    display: inline-flex;
-    width: 300px; }
-  #carousel-picture {
-    width: 1600px;
-    height: auto; }
+    align-items: center; }
+    .home #novedades {
+      margin: 0 0 5vw 0; }
+    .home #promociones {
+      margin: 0 0 5vw 0; }
   .sabores {
-    display: flex;
-    flex-direction: column; }
-  articles div {
-    display: flex;
-    flex-direction: row; }
-  .carousel-item img {
-    margin: unset !important;
-    height: auto; } }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vw 35vw 35vw 35vw 35vw 35vw 35vw;
+    grid-template-areas: "A1 A1"  "B1 B2" "B3 C1" "C2 C3" "D1 D2" "D3 E1" "E2 E3"; } }
 
+/*
+    #local{
+        width: 300px; height: 225px;
+    }
+    #formulario{
+        width: 300px; max-height: fit-content; border: #48331e;border-radius: 1px; border-style: solid;
+    }
+    #Recetas2{
+        display:flex; flex-direction: column; justify-content: center; width: fit-content;
+    }
+    #R1{
+        font-size: 25px;
+    }
+    #RDDL{
+        width: 300px; height: 300px;
+    }
+    #RNUT{
+        width: 300px; height: 300px;
+    }
+    #RNAR{
+        width: 300px; height: 300px;
+    }
+    #TNov{
+        display: inline-flex; width: 300px;
+    }
+    #TProm{
+        display: inline-flex; width: 300px;
+    }
+    #carousel-picture{
+        width: 1000px; height: auto; 
+    }
+    .sabores{
+        display: flex; flex-direction: column;
+    }
+    articles div{
+        display: flex; flex-direction: row;
+    }
+    .carousel-item img {
+        margin: unset !important;
+        height: auto;
+    }
+*/
 h2 {
   font-family: "Dosis", sans-serif;
   color: #48331e;

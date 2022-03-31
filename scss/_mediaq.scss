@@ -1,42 +1,30 @@
 @media only screen and (max-width: 400px) {
-    
-    main{
-        background-color:#e37d8b;
-        padding: 0;
-        margin: 0;
-    }
-    #nav{
-        text-align: center;
-    }
-    
-   header{
-        background-image:url(../imagenes/26.JPG);
-        padding: 0;
-        }
-
-    h2{
-            font-family: $fontfamily; color:#48331e; text-align: center; font-size: 30px; margin: 0;
-        }
-    
     .home{
-            display:flex; flex-direction: column; justify-content: center; margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #novedades{
+            margin: 0 0 5vw 0;
         }
-            
-    #novedades{
-        border: none;
+        #promociones{
+            margin: 0 0 5vw 0;
         }
-    #promociones{
-        border: none;
-        }
-    #river{
-            width: 162px; height: 108px; 
-        }
-    #boca{
-            width: 162px; height:108px;
-        }
-    p{
-        font-family: $fontfamily; font-size: 20px; align-items: center; max-width: 400px;
     }
+    .sabores{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20vw 35vw 35vw 35vw 35vw 35vw 35vw ;
+        grid-template-areas:
+        "A1 A1" 
+        "B1 B2"
+        "B3 C1"
+        "C2 C3"
+        "D1 D2"
+        "D3 E1"
+        "E2 E3";
+    }
+
+}
+/*
     #local{
         width: 300px; height: 225px;
     }
@@ -65,7 +53,7 @@
         display: inline-flex; width: 300px;
     }
     #carousel-picture{
-        width: 1600px; height: auto;
+        width: 1000px; height: auto; 
     }
     .sabores{
         display: flex; flex-direction: column;
@@ -77,4 +65,4 @@
         margin: unset !important;
         height: auto;
     }
-}
+*/

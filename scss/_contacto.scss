@@ -1,12 +1,23 @@
 #formulario{
-    background-color: rgb(255, 255, 255); width: 400px; height: fit-content; display: inline-block; align-items: center; font-family: $fontfamily;
+    background-color: rgb(255, 255, 255); width: 40vw; height: auto; display: inline-block; align-items: center; font-family: $fontfamily; max-width: 400px;
+    fieldset{
+        position: static;
+    }
 }
 #direccion{
     text-align: center;
+    
 }
 #seguinos{
-    font-size: 30px; display: block; text-align: center;
+    font-size: 3vw; display: block; text-align: center; padding-bottom: 2vw;
 }
 #local{
     display: inline-block;
+    width: 40vw;
+    height: 30vw;
+    padding-bottom: 1vw;
+}
+#info{
+    font-size: 2vw;
+    padding-bottom: 3vw;
 }

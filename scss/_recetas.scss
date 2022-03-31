@@ -1,12 +1,10 @@
 .Recetas2{
     display: grid;
     grid-template-columns: 95%;
-    grid-template-rows: 30vw 30vw 30vw 30vw;
+    grid-template-rows: 15vw 70vw;
     grid-template-areas:
     "R1" 
-    "RDDL"
-    "RNAR"
-    "RNUT"; 
+    "RDDL"; 
     border: #48331e;
     border-radius: 1vw;
     border-style:solid ;
@@ -19,18 +17,33 @@
 .pasos{
     display: flex;
     font-style: none;
+    text-align: center;
+    flex-direction: column;
     }
 }
-
-#R1{
+#aprender{
+    width: 100%; 
+    #R1{
     grid-area: R1;
     display: flex;
+    padding-bottom: 2vw;
+    width: max-content;
+}
+
 }
 #RDDL{
     grid-area: RDDL;
+    padding-bottom: 10vw;
+    width: max-content;
+
+    h4{
+        padding-bottom: 2vw;
+        font-size: 5vw;
+    }
     table{
         display: inline-block;
         padding-top: 2vw;
+        font-size: 2vw;
 
     }
     img{
@@ -38,30 +51,4 @@
         height: auto;
         padding-top: 2vw;
     }
-}
-#RNUT{
-    grid-area: RNUT;
-    table{
-        display: inline-block;
-        padding-top: 2vw;
-
-    }
-    img{
-        width: 20vw;
-        height: auto;
-        padding-top: 2vw;
-    }
-}
-#RNAR{
-    grid-area: RNAR;
-    table{
-        display: inline-block;
-        padding-top: 2vw;
-
-    }
-    img{
-        width: 20vw;
-        height: auto;
-        padding-top: 2vw;
-    }
-}
+}  

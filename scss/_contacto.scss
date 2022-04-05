@@ -1,7 +1,29 @@
-#formulario{
-    background-color: rgb(255, 255, 255); width: 40vw; height: auto; display: inline-block; align-items: center; font-family: $fontfamily; max-width: 400px;
+#esc{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vw;
     fieldset{
-        position: static;
+        text-align: start;
+        background-color: $colordalfo;
+        font-size: 2vw;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2vw;
+        border-style: groove;
+        border-color: $colormarronlogo;
+        label{
+            display: inline-block;
+            width: 20vw;
+        } 
+        input{
+            width: 15vw;
+            align-self: center;
+            min-width: 80px;
+            max-width: 100px;   
+        }
+        
+        
     }
 }
 #direccion{
@@ -9,7 +31,7 @@
     
 }
 #seguinos{
-    font-size: 3vw; display: block; text-align: center; padding-bottom: 2vw;
+    font-size: 3vw; display: block; text-align: center; padding-bottom: 4vw;
 }
 #local{
     display: inline-block;
@@ -20,4 +42,8 @@
 #info{
     font-size: 2vw;
     padding-bottom: 3vw;
+    ul{
+       list-style: none; 
+    }
+    
 }

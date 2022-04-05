@@ -17,6 +17,11 @@ div{
         margin-top: 2vw;
         margin-bottom: 2vw;
     }
+    p{
+        line-height: normal;
+        text-align: center;
+        margin: 0 10vw 0 10vw;
+    }
 }
 
 
@@ -41,9 +46,20 @@ div{
 
 h2{
     font-weight: 600;
+    line-height: normal;
 }
 h3{
     padding-top: 1vw;
     padding-bottom: 2vw;
     font-weight: 600;
+    line-height: normal;
+}
+h1{
+    line-height: normal;
+}
+.carousel-control-prev{
+    margin-left: 20vw;
+}
+.carousel-control-next{
+    margin-right: 20vw;
 }

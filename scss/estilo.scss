@@ -30,8 +30,7 @@ h2{
     @include estilotexto($fontfamily, 5vw , #48331e)
 }
 h3{
-    @include estilotexto($fontfamily, 5vw , #48331e);
-    display: inline-block;
+    @include estilotexto($fontfamily, 5vw , #48331e)
 }
 h4{
     @include estilotexto($fontfamily, 3vw , #48331e)

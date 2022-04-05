@@ -1,6 +1,5 @@
 .Recetas2{
     display: grid;
-    grid-template-columns: 95%;
     grid-template-rows: 15vw 70vw;
     grid-template-areas:
     "R1" 
@@ -8,47 +7,44 @@
     border: #48331e;
     border-radius: 1vw;
     border-style:solid ;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin: 2vw;
-    
-   
-.pasos{
-    display: flex;
-    font-style: none;
-    text-align: center;
-    flex-direction: column;
+    margin: 3vw 4vw 0 4vw;
+    #aprender{
+        h3{
+            text-align: center;
+        #R1{
+        grid-area: R1;
+        display: flex;
+        margin: 0;
+        font-size: 4vw; 
+        
+        }
     }
-}
-#aprender{
-    width: 100%; 
-    #R1{
-    grid-area: R1;
-    display: flex;
-    padding-bottom: 2vw;
-    width: max-content;
-}
-
-}
-#RDDL{
-    grid-area: RDDL;
-    padding-bottom: 10vw;
-    width: max-content;
-
-    h4{
-        padding-bottom: 2vw;
-        font-size: 5vw;
     }
-    table{
-        display: inline-block;
-        padding-top: 2vw;
+    #RDDL{
+        grid-area: RDDL;
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
         font-size: 2vw;
-
+        h4{
+            font-size: 5vw;
+            text-decoration: underline;
+        }
+        table{
+            width: 50vw;
+            align-self: center;
+            padding-top: 2vw;
+            #instrucciones{
+                width: 50vw;
+            }
+        }
     }
     img{
         width: 20vw;
         height: auto;
         padding-top: 2vw;
+        align-self: center;
     }
-}  
+
+}

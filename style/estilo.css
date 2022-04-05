@@ -28,7 +28,10 @@ nav {
       border-radius: 15px;
       font-family: "Dosis", sans-serif;
       color: #48331e;
-      padding: 0.4vw 1.5vw 0.4vw 1.5vw; }
+      padding: 0.4vw 1.5vw 0.4vw 1.5vw;
+      line-height: normal; }
+      nav ul li :hover {
+        color: #48331e; }
   nav a {
     color: #48331e;
     text-decoration: none;
@@ -37,11 +40,13 @@ nav {
 .home {
   display: flex;
   justify-content: center;
-  margin-top: 50px; }
+  margin-top: 50px;
+  line-height: normal; }
 
 .titulo {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  line-height: normal; }
   .titulo #torre {
     margin: 2% 0 0 0;
     width: 20%;
@@ -86,16 +91,28 @@ nav {
   flex-direction: row;
   justify-content: center; }
 
-#formulario {
-  background-color: white;
-  width: 40vw;
-  height: auto;
-  display: inline-block;
-  align-items: center;
-  font-family: "Dosis", sans-serif;
-  max-width: 400px; }
-  #formulario fieldset {
-    position: static; }
+#esc {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vw; }
+  #esc fieldset {
+    text-align: start;
+    background-color: #ffffff;
+    font-size: 2vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vw;
+    border-style: groove;
+    border-color: #48331e; }
+    #esc fieldset label {
+      display: inline-block;
+      width: 20vw; }
+    #esc fieldset input {
+      width: 15vw;
+      align-self: center;
+      min-width: 80px;
+      max-width: 100px; }
 
 #direccion {
   text-align: center; }
@@ -104,7 +121,7 @@ nav {
   font-size: 3vw;
   display: block;
   text-align: center;
-  padding-bottom: 2vw; }
+  padding-bottom: 4vw; }
 
 #local {
   display: inline-block;
@@ -115,58 +132,56 @@ nav {
 #info {
   font-size: 2vw;
   padding-bottom: 3vw; }
+  #info ul {
+    list-style: none; }
 
 .Recetas2 {
   display: grid;
-  grid-template-columns: 95%;
   grid-template-rows: 15vw 70vw;
   grid-template-areas: "R1"  "RDDL";
   border: #48331e;
   border-radius: 1vw;
   border-style: solid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin: 2vw; }
-  .Recetas2 .pasos {
+  margin: 3vw 4vw 0 4vw; }
+  .Recetas2 #aprender h3 {
+    text-align: center; }
+    .Recetas2 #aprender h3 #R1 {
+      grid-area: R1;
+      display: flex;
+      margin: 0;
+      font-size: 4vw; }
+  .Recetas2 #RDDL {
+    grid-area: RDDL;
     display: flex;
-    font-style: none;
-    text-align: center;
-    flex-direction: column; }
-
-#aprender {
-  width: 100%; }
-  #aprender #R1 {
-    grid-area: R1;
-    display: flex;
-    padding-bottom: 2vw;
-    width: max-content; }
-
-#RDDL {
-  grid-area: RDDL;
-  padding-bottom: 10vw;
-  width: max-content; }
-  #RDDL h4 {
-    padding-bottom: 2vw;
-    font-size: 5vw; }
-  #RDDL table {
-    display: inline-block;
-    padding-top: 2vw;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
     font-size: 2vw; }
-  #RDDL img {
+    .Recetas2 #RDDL h4 {
+      font-size: 5vw;
+      text-decoration: underline; }
+    .Recetas2 #RDDL table {
+      width: 50vw;
+      align-self: center;
+      padding-top: 2vw; }
+      .Recetas2 #RDDL table #instrucciones {
+        width: 50vw; }
+  .Recetas2 img {
     width: 20vw;
     height: auto;
-    padding-top: 2vw; }
+    padding-top: 2vw;
+    align-self: center; }
 
 .sabores {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20vw 35vw 35vw 35vw;
   grid-template-areas: "A1 A1 A1"  "B1 B2 B3" "C1 C2 C3" "D1 D2 D3" "E1 E2 E3";
-  margin: 0;
+  margin: 0 0 0 0;
   justify-content: center;
   text-align: center;
-  justify-items: center; }
+  justify-items: center;
+  padding-bottom: 5vw; }
 
 .gridcomponente, #B1, #B2, #B3, #C1, #C2, #C3, #D1, #D2, #D3, #E1, #E2, #E3 {
   border: #48331e; }
@@ -225,9 +240,6 @@ nav {
 #E3 {
   grid-area: E3; }
 
-#Agregar {
-  padding-top: 10%; }
-
 @keyframes NOSI1 {
   0% {
     background-image: url(../imagenes/logo-australia2.jpg); }
@@ -248,6 +260,11 @@ div #NOSI1 {
   margin-top: 2vw;
   margin-bottom: 2vw; }
 
+div p {
+  line-height: normal;
+  text-align: center;
+  margin: 0 10vw 0 10vw; }
+
 .carousel-item img {
   margin: auto;
   width: 15vw;
@@ -263,24 +280,40 @@ div #NOSI1 {
     height: auto; }
 
 h2 {
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: normal; }
 
 h3 {
   padding-top: 1vw;
   padding-bottom: 2vw;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: normal; }
 
-/* From cssbuttons.io by @alexmaracinaru */
+h1 {
+  line-height: normal; }
+
+.carousel-control-prev {
+  margin-left: 20vw; }
+
+.carousel-control-next {
+  margin-right: 20vw; }
+
+/* 
+    From cssbuttons.io by @alexmaracinaru
+    Para pagina productos #Agregar
+*/
 .cta {
   border: none;
-  background: none; }
+  background: none;
+  width: auto;
+  padding-top: 2vw;
+  align-self: baseline; }
 
 .cta span {
-  padding-bottom: 7px;
-  letter-spacing: 4px;
-  font-size: 10px;
-  padding-right: 15px;
-  text-transform: uppercase; }
+  letter-spacing: 0.5vw;
+  font-size: 1vw;
+  text-transform: uppercase;
+  justify-items: center; }
 
 .cta svg {
   transform: translateX(-8px);
@@ -320,12 +353,6 @@ footer {
   padding: 0%;
   padding-top: 2vw;
   padding-bottom: 2vw; }
-  footer i {
-    padding: 1.5%;
-    display: flex;
-    font-size: 1vw; }
-  footer ul {
-    margin: 0%; }
   footer #topof {
     display: flex;
     font-size: 2vw;
@@ -337,7 +364,7 @@ footer {
     border-radius: 1vw;
     float: right; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .home {
     display: flex;
     flex-direction: column;
@@ -405,8 +432,7 @@ h3 {
   color: #48331e;
   text-align: center;
   font-size: 5vw;
-  margin: 0;
-  display: inline-block; }
+  margin: 0; }
 
 h4 {
   font-family: "Dosis", sans-serif;

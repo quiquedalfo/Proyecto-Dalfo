@@ -4,10 +4,9 @@
     grid-template-areas:
     "R1" 
     "RDDL"; 
-    border: #48331e;
-    border-radius: 1vw;
-    border-style:solid ;
     margin: 3vw 4vw 0 4vw;
+    padding-bottom: 2vw;
+    
     #aprender{
         h3{
             text-align: center;
@@ -27,6 +26,11 @@
         height: auto;
         flex-direction: column;
         font-size: 2vw;
+        border: #48331e;
+        border-radius: 2vw;
+        border-style: double ;
+        border-width: 1vw;
+        
         h4{
             font-size: 5vw;
             text-decoration: underline;
@@ -35,9 +39,11 @@
             width: 50vw;
             align-self: center;
             padding-top: 2vw;
+            
             #instrucciones{
                 width: 50vw;
             }
+            
         }
     }
     img{

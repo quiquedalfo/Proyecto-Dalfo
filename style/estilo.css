@@ -108,11 +108,10 @@ nav {
     #esc fieldset label {
       display: inline-block;
       width: 20vw; }
-    #esc fieldset input {
-      width: 15vw;
-      align-self: center;
-      min-width: 80px;
-      max-width: 100px; }
+    #esc fieldset #Nombreyapellido {
+      width: max-content; }
+    #esc fieldset #Emailref {
+      width: max-content; }
 
 #direccion {
   text-align: center; }
@@ -152,7 +151,7 @@ nav {
     grid-area: RDDL;
     display: flex;
     width: 100%;
-    height: auto;
+    height: fit-content;
     flex-direction: column;
     font-size: 2vw;
     border: #48331e;
@@ -179,16 +178,18 @@ nav {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20vw 35vw 35vw 35vw;
   grid-template-areas: "A1 A1 A1"  "B1 B2 B3" "C1 C2 C3" "D1 D2 D3" "E1 E2 E3";
-  margin: 0 0 0 0;
+  margin: 0 1vw 0 1vw;
   justify-content: center;
   text-align: center;
   justify-items: center;
   padding-bottom: 5vw; }
 
 .gridcomponente, #B1, #B2, #B3, #C1, #C2, #C3, #D1, #D2, #D3, #E1, #E2, #E3 {
-  border: #48331e; }
+  border-color: #48331e;
+  border-style: double;
+  border-radius: 3px; }
   .gridcomponente img, #B1 img, #B2 img, #B3 img, #C1 img, #C2 img, #C3 img, #D1 img, #D2 img, #D3 img, #E1 img, #E2 img, #E3 img {
-    width: 15vw;
+    width: 13vw;
     height: auto; }
   .gridcomponente p, #B1 p, #B2 p, #B3 p, #C1 p, #C2 p, #C3 p, #D1 p, #D2 p, #D3 p, #E1 p, #E2 p, #E3 p {
     font-size: 2vw;
@@ -207,40 +208,64 @@ nav {
     text-align: center; }
 
 #B1 {
-  grid-area: B1; }
+  grid-area: B1;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #B2 {
-  grid-area: B2; }
+  grid-area: B2;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #B3 {
-  grid-area: B3; }
+  grid-area: B3;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #C1 {
-  grid-area: C1; }
+  grid-area: C1;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #C2 {
-  grid-area: C2; }
+  grid-area: C2;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #C3 {
-  grid-area: C3; }
+  grid-area: C3;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #D1 {
-  grid-area: D1; }
+  grid-area: D1;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #D2 {
-  grid-area: D2; }
+  grid-area: D2;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #D3 {
-  grid-area: D3; }
+  grid-area: D3;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #E1 {
-  grid-area: E1; }
+  grid-area: E1;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #E2 {
-  grid-area: E2; }
+  grid-area: E2;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 #E3 {
-  grid-area: E3; }
+  grid-area: E3;
+  margin-bottom: 2vw;
+  margin-right: 1vw; }
 
 @keyframes NOSI1 {
   0% {
@@ -317,37 +342,6 @@ h1 {
   text-transform: uppercase;
   justify-items: center; }
 
-.cta svg {
-  transform: translateX(-8px);
-  transition: all 0.3s ease; }
-
-.cta:hover svg {
-  transform: translateX(0); }
-
-.cta:active svg {
-  transform: scale(0.9); }
-
-.hover-underline-animation {
-  position: relative;
-  color: black;
-  padding-bottom: 20px; }
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1.5px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out; }
-
-.cta:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left; }
-
 footer {
   background-color: #ffc0cb;
   height: 5vw;
@@ -372,56 +366,113 @@ footer {
     flex-direction: column;
     align-items: center; }
     .home #novedades {
-      margin: 0 0 5vw 0; }
+      width: 85vw;
+      height: auto;
+      margin: 0; }
+      .home #novedades #NOV #TNov {
+        font-size: 5vw;
+        width: 70vw;
+        text-align: center;
+        margin-right: 0;
+        padding: 0; }
+      .home #novedades #fotos #boca {
+        width: 40vw; }
+      .home #novedades #fotos #river {
+        width: 40vw; }
     .home #promociones {
-      margin: 0 0 5vw 0; }
+      width: 85vw;
+      height: auto;
+      margin: 4vw 0 5vw 0; }
   .sabores {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20vw 35vw 35vw 35vw 35vw 35vw 35vw;
-    grid-template-areas: "A1 A1"  "B1 B2" "B3 C1" "C2 C3" "D1 D2" "D3 E1" "E2 E3"; } }
+    grid-template-rows: 20vw 45vw 45vw 45vw 45vw 45vw 45vw;
+    grid-template-areas: "A1 A1"  "B1 B2" "B3 C1" "C2 C3" "D1 D2" "D3 E1" "E2 E3"; }
+  #B1 {
+    grid-area: B1;
+    width: 45vw;
+    height: 180px; }
+    #B1 div img {
+      width: 20vw; }
+  #B2 {
+    grid-area: B2;
+    width: 45vw;
+    height: 180px; }
+    #B2 div img {
+      width: 20vw; }
+  #B3 {
+    grid-area: B3;
+    width: 45vw;
+    height: 180px; }
+    #B3 div img {
+      width: 20vw; }
+  #C1 {
+    grid-area: C1;
+    width: 45vw;
+    height: 180px; }
+    #C1 div img {
+      width: 20vw; }
+  #C2 {
+    grid-area: C2;
+    width: 45vw;
+    height: 180px; }
+    #C2 div img {
+      width: 20vw; }
+  #C3 {
+    grid-area: C3;
+    width: 45vw;
+    height: 180px; }
+    #C3 div img {
+      width: 20vw; }
+  #D1 {
+    grid-area: D1;
+    width: 45vw;
+    height: 180px; }
+    #D1 div img {
+      width: 20vw; }
+  #D2 {
+    grid-area: D2;
+    width: 45vw;
+    height: 180px; }
+    #D2 div img {
+      width: 20vw; }
+  #D3 {
+    grid-area: D3;
+    width: 45vw;
+    height: 180px; }
+    #D3 div img {
+      width: 20vw; }
+  #E1 {
+    grid-area: E1;
+    width: 45vw;
+    height: 180px; }
+    #E1 div img {
+      width: 20vw; }
+  #E2 {
+    grid-area: E2;
+    width: 45vw;
+    height: 180px; }
+    #E2 div img {
+      width: 20vw; }
+  #E3 {
+    grid-area: E3;
+    width: 45vw;
+    height: 180px; }
+    #E3 div img {
+      width: 20vw; }
+  div p {
+    font-size: 3vw; }
+  .Recetas2 {
+    height: 150vw; }
+    .Recetas2 #RDDL {
+      height: fit-content;
+      font-size: 3vw;
+      margin-top: 2vw; }
+      .Recetas2 #RDDL img {
+        width: 40vw; }
+      .Recetas2 #RDDL h5 {
+        font-size: 4vw;
+        margin: 3vw 0 0 0; } }
 
-/*
-    #local{
-        width: 300px; height: 225px;
-    }
-    #formulario{
-        width: 300px; max-height: fit-content; border: #48331e;border-radius: 1px; border-style: solid;
-    }
-    #Recetas2{
-        display:flex; flex-direction: column; justify-content: center; width: fit-content;
-    }
-    #R1{
-        font-size: 25px;
-    }
-    #RDDL{
-        width: 300px; height: 300px;
-    }
-    #RNUT{
-        width: 300px; height: 300px;
-    }
-    #RNAR{
-        width: 300px; height: 300px;
-    }
-    #TNov{
-        display: inline-flex; width: 300px;
-    }
-    #TProm{
-        display: inline-flex; width: 300px;
-    }
-    #carousel-picture{
-        width: 1000px; height: auto; 
-    }
-    .sabores{
-        display: flex; flex-direction: column;
-    }
-    articles div{
-        display: flex; flex-direction: row;
-    }
-    .carousel-item img {
-        margin: unset !important;
-        height: auto;
-    }
-*/
 h2 {
   font-family: "Dosis", sans-serif;
   color: #48331e;
@@ -456,6 +507,3 @@ main {
   margin: 0;
   text-align: center;
   overflow-x: visible; }
-
-.bombones {
-  width: 40px; }

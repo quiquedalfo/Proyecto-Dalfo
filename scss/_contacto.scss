@@ -17,14 +17,13 @@
             display: inline-block;
             width: 20vw;
         } 
-        input{
-            width: 15vw;
-            align-self: center;
-            min-width: 80px;
-            max-width: 100px;   
+        #Nombreyapellido{
+            width: max-content;
         }
-        
-        
+        #Emailref{
+            width: max-content;
+        }
+            
     }
 }
 #direccion{

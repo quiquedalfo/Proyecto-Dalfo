@@ -65,9 +65,11 @@ nav {
   border-style: double;
   border-radius: 5px;
   width: 35%;
-  margin-right: 20px;
-  padding-bottom: 3vw;
-  margin-bottom: 3vw; }
+  margin: 0 5vw 3vw 0;
+  padding: 1vw 0 3vw 0; }
+  #novedades p {
+    padding: 0;
+    margin: 0; }
 
 #promociones {
   text-align: center;
@@ -75,8 +77,12 @@ nav {
   border-style: double;
   border-radius: 5px;
   width: 35%;
-  padding-bottom: 3vw;
+  padding: 1vw 0 3vw 0;
   margin-bottom: 3vw; }
+  #promociones p {
+    padding: 0 2vw 0 2vw; }
+  #promociones #ir {
+    padding-top: 5vw; }
 
 #river {
   width: 15vw;
@@ -344,11 +350,21 @@ h1 {
 
 footer {
   background-color: #ffc0cb;
-  height: 5vw;
   margin: 0%;
   padding: 0%;
-  padding-top: 2vw;
+  padding-top: 1vw;
   padding-bottom: 2vw; }
+  footer div {
+    padding: 0 0 0 0;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    color: #48331e;
+    margin-top: 1vw; }
+  footer i {
+    margin-left: 3vw;
+    font-size: 3vw; }
+  footer p {
+    margin-top: 2vw; }
   footer #topof {
     display: flex;
     font-size: 2vw;
@@ -358,7 +374,8 @@ footer {
     background: #ffc0cb;
     font-weight: 600;
     border-radius: 1vw;
-    float: right; }
+    float: right;
+    margin-right: 3vw; }
 
 @media only screen and (max-width: 500px) {
   .home {

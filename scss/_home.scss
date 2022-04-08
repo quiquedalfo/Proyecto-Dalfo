@@ -19,11 +19,20 @@
 }
 
 #novedades{
-    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%; margin-right: 20px;padding-bottom: 3vw;margin-bottom: 3vw;
+    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%;margin: 0 5vw 3vw 0; padding: 1vw 0 3vw 0;
+    p{
+        padding: 0; margin: 0;
+    }
 }
 
 #promociones{
-    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%;padding-bottom: 3vw; margin-bottom: 3vw;
+    text-align: center; border-color: #48331e; border-style: double; border-radius: 5px; width: 35%;padding: 1vw 0 3vw 0; margin-bottom: 3vw;
+    p{
+        padding: 0 2vw 0 2vw;
+    }
+    #ir{
+        padding-top: 5vw;
+    }
 }
 #river{
     width: 15vw; padding-top: 2vw;

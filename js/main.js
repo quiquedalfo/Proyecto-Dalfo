@@ -1,82 +1,67 @@
-/*ndlnsjdnd*/
-//jdosvnofndkjas
+const Limon = {
+  sabor: "limon",
+  chocolate: "blanco",
+  color: "amarillo",
+  detalles: "blanco"};
+const Manzana = {
+  sabor: "manzana",
+  chocolate: "blanco",
+  color: "verde",
+  detalles: "rojo"};
+const Nuez = {
+  sabor: "nuez",
+  chocolate: "blanco",
+  color: "blanco",
+  detalles: "naranja"};
+const Caju = {
+  sabor: "caju",
+  chocolate: "blanco",
+  color: "celeste",
+  detalles: "naranja"};
+const DulceDeLeche = {
+  sabor: "dulce de leche",
+  chocolate: "con leche",
+  color: "celeste",
+  detalles: "blanco y amarillo"};
+const Nutella = {
+  sabor: "nutella",
+  chocolate: "con leche",
+  color: "blanco",
+  detalles: "rojo y negro"};
+const FrutosRojos = {
+  sabor: "frutos rojos",
+  chocolate: "con leche",
+  color: "rojo",
+  detalles: "rosa"};
+const Toffee = {
+  sabor: "toffee",
+  chocolate: "con leche",
+  color: "naranja",
+  detalles: "rojo, verde y amarillo"};
+const Cafe = {
+  sabor: "cafe",
+  chocolate: "amargo",
+  color: "blanco",
+  detalles: "marron"};
+const Almendras = {
+  sabor: "almendras",
+  chocolate: "amargo",
+  color: "rojo",
+  detalles: "amrillo"};
+const Naranja = {
+  sabor: "naranja",
+  chocolate: "amargo",
+  color: "naranja",
+  detalles: "verde"};
+const Banana = {
+  sabor: "banana",
+  chocolate: "amargo",
+  color: "amarillo",
+  detalles: "negro"};
+const sabores = [Limon, Manzana, Nuez, Caju, Toffee, Nutella, DulceDeLeche, FrutosRojos, Cafe, Banana, Naranja, Almendras];
 
-/*let nombreUsuario = prompt ("Hola, Bienvenido! Ingresa tu Usuario");
+const MiCaja = [];
+let sabor = prompt("elegi tu sabor");
+MiCaja.push(sabor);
 
-alert("Hola " + nombreUsuario);
-
-console.log("Hola " + nombreUsuario);
-*/
-
-// let nota = prompt("ingresa tu nota");
-
-// if (nota >= 0 && nota < 6) {
-//   console.log("No Aprobado, nos vamos a seguir viendo");} 
-//   else if (nota >= 6 && nota < 10) {
-//   console.log("Bien ahi, aprobaste...");} 
-//   else if (nota == 10) {
-//   console.log("Felicidades nota maxima, sos un crack");} 
-//   else if (nota < 0 || nota > 10) {console.log("ERROR");}
-
-/*
-let sabor = prompt("Elegi tu sabor / Para finalizar escribir - total -");
-
-while(sabor != "total") {
-  switch(sabor) {
-    case "dulce de leche":
-      alert ("Agregaste dulce de leche a tu carrito");
-      console.log("Agregaste dulce de leche a tu carrito");
-      console.count("dulce de leche");
-      break;
-    case "nutella":
-      alert ("Agregaste nutella a tu carrito");
-      console.log("Agregaste nutella a tu carrito");
-      console.count("nutella");
-      break;
-    case "limon":
-      alert ("Agregaste limon a tu carrito");
-      console.log("Agregaste limon a tu carrito");
-      console.count("limon");
-      break;
-    case "frutos rojos":
-      alert ("Agregaste frutos rojos a tu carrito");
-      console.log("Agregaste frutos rojos a tu carrito");
-      console.count("frutos rojos");
-    default: 
-      alert("Eso no es un sabor, elegi tu sabor / Para finalizar escribir - total -");
-      break;
-  }
-  sabor = prompt("Elegi tu sabor / Para finalizar escribir - total -");
-}
-*/
-let sabor = prompt("Elegi tu sabor / Para finalizar escribir - total -");
-let total = 0;
-while(sabor != "total") {
-  switch(sabor) {
-    case "dulce de leche":
-      alert ("Agregaste dulce de leche a tu carrito");
-      console.log("Agregaste dulce de leche a tu carrito");
-      total+=1;
-      break;
-    case "nutella":
-      alert ("Agregaste nutella a tu carrito");
-      console.log("Agregaste nutella a tu carrito");
-      total+=1;
-      break;
-    case "limon":
-      alert ("Agregaste limon a tu carrito");
-      console.log("Agregaste limon a tu carrito");
-      total+=1;
-      break;
-    case "frutos rojos":
-      alert ("Agregaste frutos rojos a tu carrito");
-      console.log("Agregaste frutos rojos a tu carrito");
-      total+=1;
-      break;
-    default: 
-      alert("Eso no es un sabor, elegi tu sabor / Para finalizar escribir - total -");
-      break;
-  }
-  sabor = prompt("Elegi tu sabor / Para finalizar escribir - total -");
-}
-console.log("Cantidad total: " + total);
+console.log(MiCaja);

@@ -98,7 +98,7 @@ function agregarDulceDeLeche() {
 }
 function RevelarValor(cantidadPorCaja) {
     console.log("Unidades por caja " + cantidadPorCaja)
-  };
+};
 let total = 0;
 
 document.getElementById("botonAgregarCafe").addEventListener("click", agregarCafe);

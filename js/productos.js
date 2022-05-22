@@ -1,6 +1,8 @@
+//js en productos.html
 function RevelarValor(cantidadPorCaja) {
     console.log("Unidades por caja " + cantidadPorCaja)
 };
+//Botones de pagina productos.html
 function agregarCafe() {
     document.getElementById ("botonAgregarCafe");
     console.log("Cafe");

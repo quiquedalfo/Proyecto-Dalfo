@@ -1,4 +1,6 @@
-
+function RevelarValor(cantidadPorCaja) {
+    console.log("Unidades por caja " + cantidadPorCaja)
+};
 function agregarCafe() {
     document.getElementById ("botonAgregarCafe");
     console.log("Cafe");
@@ -96,9 +98,7 @@ function agregarDulceDeLeche() {
     total += parseInt(cantidad);
     console.log("Tu total es de " + total);        
 }
-function RevelarValor(cantidadPorCaja) {
-    console.log("Unidades por caja " + cantidadPorCaja)
-};
+
 let total = 0;
 
 document.getElementById("botonAgregarCafe").addEventListener("click", agregarCafe);

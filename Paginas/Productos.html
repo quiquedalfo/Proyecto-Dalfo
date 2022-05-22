@@ -49,10 +49,12 @@
         <section class="sabores">
             <articles id="A1">
                 <h2>¡Armá tu caja!</h2>
+                <h2>Ingresa tu nombre</h2>
+                <input type="text" id="nombre">
                 <div>
-                <select name="" id="Tam">
-                <option value="1">12 unidades</option>
-                <option value="2">25 unidades</option>
+                <select name="" id="Tam" onmousedown="this.value='';" onchange="RevelarValor(this.value)">
+                <option value="12">12 unidades</option>
+                <option value="25">25 unidades</option>
                 </select>
                 <span class="focus"></span>
                 </div>
@@ -67,9 +69,9 @@
                     Chocolate semi-amargo lacteado relleno de ganache de café.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                    <button class="cta">
+                    <input type="number" id="cantidadCafe" name="bombones"
+                     min="1" max="25" value="1">
+                    <button id="botonAgregarCafe">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -84,9 +86,9 @@
                     Chocolate blanco relleno de ganache de chocolate blanco y coulis de limon.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                    <button class="cta">
+                    <input type="number" id="cantidadLimon" name="bombones"
+                     min="1" max="25" value="1">
+                    <button id="botonAgregarLimon">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -103,9 +105,9 @@
                     Chocolate blanco relleno de mermelada de manzana.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadManzana" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarManzana">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -121,9 +123,9 @@
                     Chocolate blanco relleno ganache de chocolate blanco y nuez tostada.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadNuez" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarNuez">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -139,9 +141,9 @@
                     Chocolate con leche relleno de nutella casera a base de avellanas.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadNutella" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarNutella">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -157,9 +159,9 @@
                     Chocolate con leche relleno de toffee y maní.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadToffee" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarToffee">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -175,9 +177,9 @@
                     Chocolate con leche relleno de ganache de chocolate con leche y mermelada de frutos rojos.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadFrutosRojos" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarFrutosRojos">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -193,9 +195,9 @@
                     Chocolate con blanco relleno de ganachde de chocolate blanco y castañas de caju caramelizadas con miel.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadCaju" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarCaju">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -211,9 +213,9 @@
                     Chocolate semi-amargo lacteado relleno de ganache de chocolate semi-amargo lacteado y almendras caramelizadas.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadAlmendra" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarAlmendra">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -229,9 +231,9 @@
                     Chocolate semi-amargo lacteado relleno de mermelada de Naranjas.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadNaranja" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarNaranja">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -247,9 +249,9 @@
                     Chocolate semi-amargo lacteado relleno de ganache de banana y chocolate blanco, y dulce de leche.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadBanana" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarBanana">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -265,9 +267,9 @@
                     Chocolate semi-amargo lacteado relleno de Dulce de leche.
                 </p>
                 <div id="Agregar">
-                    <input type="number" id="bombones" name="bombones"
-                     min="1" max="8">
-                     <button class="cta">
+                    <input type="number" id="cantidadDulceDeLeche" name="bombones"
+                     min="1" max="25" value="1">
+                     <button id="botonAgregarDulceDeLeche">
                         <span> Agregar </span>
                     </button>
                     </div>
@@ -286,7 +288,6 @@
         <i>2022 Copyright</i>
     </footer>
 
-    
-</body>
+    <script src="/js/productos.js"></script>
 
 </html>

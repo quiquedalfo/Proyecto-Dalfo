@@ -1,9 +1,13 @@
-
-
+#nombre{
+        height: auto;
+        width: 16vw;
+        font-size: 3vw;
+        font-family: $fontfamily;
+}
 .sabores{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vw 35vw 35vw 35vw;
+    grid-template-rows: 30vw 35vw 35vw 35vw;
     grid-template-areas:
     "A1 A1 A1" 
     "B1 B2 B3"

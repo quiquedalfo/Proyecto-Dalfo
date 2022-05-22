@@ -1,4 +1,4 @@
-/*ndlnsjdnd*/
+/*ndlnsjdnd
 //jdosvnofndkjas
 
 /*let nombreUsuario = prompt ("Hola, Bienvenido! Ingresa tu Usuario");
@@ -51,4 +51,127 @@ while(sabor != "total") {
 }
 console.log("Cantidad total: " + total);
 
+
+
+
+const PrecioCajaX6 = 2000;
+const PrecioCajaX12 = 3000;
+const CantidadCajax12 = 12;
+const CantidadCajax6 = 6;
+let cantidad = 0;
+let carrito = [];
+
+
+
+//Indentificacion de usuario
+const btnAgregar = document.querySelector("#bombones");
+btnAgregar = addEventListener("click") => {
+};
+
+const Login = () => {
+  let nombre = prompt("Hola, ingresa tu nombre");
+  while (nombre =="" || nombre == null) {
+    nombre = prompt("Ingrese tu nombre correctamente");
+  }
+  return nombre;
+};
+
+//Indentificacion de sabor
+const ElegirSabor = () => {
+  let sabor = prompt("Que sabor queres?");
+  while (sabor == "" && sabor != ListaDeBombones) {
+    sabor = prompt("Que sabor queres?");
+  }
+  return sabor;
+};
+
+//Indentificacion de cantidad
+const ElegirCantidad = () => {
+  let cantidad = parseInt(prompt("Cuantos queres?"));
+  while (cantidad < 1 || cantidad >=20 ) {
+    alert(`Lo lamento pero en numero no es adecuado.\n Por favor ingresa entre 1 el 20`);
+    cantidad = parseInt(prompt("Cuantos queres?"));
+  }
+  return cantidad;
+};
+
+//Ver lista de bombones
+const VerLista = () => {
+  let texto = "";
+  ListaDeBombones.forEach ((element) =>{
+      texto += `${element.id}) ${element.sabor}\n`;
+  })
+  alert(texto);
+};
+
+
+//Buscar si matchea con la lista de bombones 
+
+const BombonesSeleccionados = (sabor) => {
+  console.log(sabor);
+  let BombonFind = ListaDeBombones.find((element) => element.sabor === sabor);
+  carrito.push(BombonFind);
+
+  let seguir = confirm("Elija otro sabor" + VerLista);
+
+  if (seguir === true) {
+    init();
+  }
+};
+
+
+
+
+
+let Cliente = Login();
+let Lista = VerLista();
+let Producto = ElegirSabor();
+let CantidadBruta = ElegirCantidad();
+carrito.push(cantidad);
+
+console.log(Cliente);
+console.log(Producto);
+console.log(CantidadBruta);
+console.log(carrito);
+
+let Carrito = CantidadBruta;
+if (Carrito.CantidadBruta != 6) {
+  Producto = ElegirSabor();
+  CantidadBruta = ElegirCantidad();
+} else {
+  console.log(Carrito)
+}
+
+/*let Carrito = CantidadBruta;
+if (Carrito.CantidadBruta != 12) {
+  Producto = ElegirSabor();
+  CantidadBruta = ElegirCantidad();
+} else {
+  console.log(Carrito)
+}
+
+
+
+queres cajas de 12 o de 25?
+12 o 25
+si es caja de 12 entonces lista y promt de sabor y cantidad
+si es caja de 25 entonces lista y prompt de sabor y cantidad
+Ambos seran enviados a un array para ser mostrado al final de el 
+
+
+function crearUsuario() {
+  const ingreso = document.getElementById("nombre");
+  localStorage.setItem("valor", ingreso.value)
+}
+function mostrarUsuario (){
+StereoPannerNode.innerText = localStorage.getItem("valor");
+}
+
+FUNCTION borrarUsuario (){
+  localStorage.removeItem("valor");
+}
+
+guardar.addEventListener("click", crearUsuario);
+mostrar.addEventListener("click", mostrarUsuario);
+borrar.addEventListener("click", borrarUsuario);
 */

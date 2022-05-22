@@ -179,10 +179,16 @@ nav {
     padding-top: 2vw;
     align-self: center; }
 
+#nombre {
+  height: auto;
+  width: 16vw;
+  font-size: 3vw;
+  font-family: "Dosis", sans-serif; }
+
 .sabores {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20vw 35vw 35vw 35vw;
+  grid-template-rows: 30vw 35vw 35vw 35vw;
   grid-template-areas: "A1 A1 A1"  "B1 B2 B3" "C1 C2 C3" "D1 D2 D3" "E1 E2 E3";
   margin: 0 1vw 0 1vw;
   justify-content: center;

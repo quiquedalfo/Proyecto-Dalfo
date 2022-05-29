@@ -40,7 +40,8 @@ let total = 0;
 
 //js en productos.html
 function RevelarValor(cantidadPorCaja) {
-    console.log("Unidades por caja " + cantidadPorCaja)
+    localStorage.setItem("Unidades por caja ", cantidadPorCaja);
+    OlCarrito.innerHTML = "Caja de " + cantidadPorCaja;
 };
 
 function agregarSabor(saborParam) {
@@ -52,13 +53,13 @@ function agregarSabor(saborParam) {
     total += parseInt(cantidadAAgregar);
     localStorage.setItem(sabor, cantidadTotalBombon);
     carrito[sabor] = cantidadTotalBombon;
-    OlCarrito.innerHTML = "<li> Lista de sabores elegidos </li>" + armarOLDeCarrito();
+    OlCarrito.innerHTML = armarOLDeCarrito();
 }
 
 function armarOLDeCarrito() {
     let lista = []
    Object.keys(carrito).forEach((sabor) => {
-        lista.push(`<li> Del sabor ${sabor} tenes ${carrito[sabor]} </li>`);
+        lista.push(`<li> ${sabor} x ${carrito[sabor]} </li>`);
     })
     return lista.join('\n');
 }
@@ -66,3 +67,4 @@ function armarOLDeCarrito() {
 ListaDeBombones.forEach((bombon) => {
     document.getElementById(`botonAgregar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => agregarSabor(bombon.sabor));
 })
+

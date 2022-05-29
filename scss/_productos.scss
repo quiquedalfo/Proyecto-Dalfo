@@ -7,7 +7,7 @@
 .sabores{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30vw 35vw 35vw 35vw;
+    grid-template-rows: 30vw 35vw 35vw 35vw 35vw;
     grid-template-areas:
     "A1 A1 A1" 
     "B1 B2 B3"
@@ -123,3 +123,6 @@
     margin-right: 1vw;
 }
 
+#carrito{
+    padding-bottom: 10vw;
+}

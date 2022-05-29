@@ -1,7 +1,39 @@
+class Bombon {
+    constructor(id, sabor, chocolate, color, color2, codigo,precio) {
+      this.id = id;
+      this.sabor = sabor;
+      this.chocolate = chocolate;
+      this.color = color;
+      this.color2 = color2;
+      this.codigo = codigo;
+      this.precio = precio;
+    }
+  };
+  
+  //Lista de bombones con Detalles
+  const ListaDeBombones = [
+    new Bombon (1,"Limon", "Chocolate Blanco", "Amarillo", "Blanco", "LIM", 120),
+    new Bombon (2,"Manzana", "Chocolate Blanco", "Verde", "Rojo", "MAN", 120),
+    new Bombon (3,"Nuez", "Chocolate Blanco", "Blanco", "Naranja", "NUE", 120),
+    new Bombon (4,"Caju", "Chocolate Blanco", "Celeste", "Naranja", "CAJ", 120),
+    new Bombon (5,"Nutella", "Chocolate con Leche", "Blanco" , "Rojo" , "NUT", 120),
+    new Bombon (6,"Dulce de Leche", "Chocolate con Leche", "Celeste" , "Blanco" , "DDL", 120),
+    new Bombon (7,"Frutos Rojos", "Chocolate con Leche", "Rojo" , "Rosa" , "F.R", 120),
+    new Bombon (8,"Toffee", "Chocolate con Leche", "Naranja" , "Rojo" , "TOF", 120),
+    new Bombon (9,"Naranja", "Chocolate Amargo", "Naranja" , "Verde" , "NAR", 120),
+    new Bombon (10,"Banana", "Chocolate Amargo", "Amarillo" , "Negro" , "BNN", 120),
+    new Bombon (11,"Almendras", "Chocolate Amargo", "Rojo" , "Amarillo" , "ALM", 120),
+    new Bombon (12,"Cafe", "Chocolate Amargo", "Blanco" , "Marron" , "CAF", 120),
+  ];
+
+let total = 0;
+let carrito = [];
+
 //js en productos.html
 function RevelarValor(cantidadPorCaja) {
     console.log("Unidades por caja " + cantidadPorCaja)
 };
+
 //Botones de pagina productos.html
 function agregarCafe() {
     document.getElementById ("botonAgregarCafe");
@@ -10,6 +42,8 @@ function agregarCafe() {
     console.log("Agregaste " + cantidad);
     total += parseInt(cantidad);
     console.log("Tu total es de " + total);
+    localStorage.setItem("Cafe", "Cafe");
+    
 }
 function agregarLimon() {
     document.getElementById ("botonAgregarLimon");
@@ -18,6 +52,7 @@ function agregarLimon() {
     console.log("Agregaste " + cantidad);
     total += parseInt(cantidad);
     console.log("Tu total es de " + total);
+    localStorage.setItem("Limon", "Limon");
 }
 function agregarManzana() {
     document.getElementById ("botonAgregarManzana");
@@ -98,10 +133,9 @@ function agregarDulceDeLeche() {
     let cantidad = document.getElementById("cantidadDulceDeLeche").value;
     console.log("Agregaste " + cantidad);
     total += parseInt(cantidad);
-    console.log("Tu total es de " + total);        
+    console.log("Tu total es de " + total);
+            
 }
-
-let total = 0;
 
 document.getElementById("botonAgregarCafe").addEventListener("click", agregarCafe);
 document.getElementById("cantidadCafe");
@@ -139,6 +173,5 @@ document.getElementById("cantidadBanana");
 document.getElementById("botonAgregarDulceDeLeche").addEventListener("click", agregarDulceDeLeche);
 document.getElementById("cantidadDulceDeLeche");
 
-
-
-
+const OlCarrito = document.getElementById("ListaCarrito");
+OlCarrito.innerHTML = "<li> Lista de sabores elegidos </li>" + cantidad;

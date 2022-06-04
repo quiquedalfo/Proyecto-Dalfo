@@ -34,14 +34,14 @@ function inicializarCarrito() {
             carrito[bombon.sabor] = parseInt(localStorage.getItem(bombon.sabor.replace(/\s/g, "")))
     }) 
 }
-inicializarCarrito();
+
 const OlCarrito = document.getElementById("ListaCarrito");
 let total = 0;
 
 //js en productos.html
-function RevelarValor(cantidadPorCaja) {
+function revelarValor(cantidadPorCaja) {
     localStorage.setItem("Unidades por caja ", cantidadPorCaja);
-    OlCarrito.innerHTML = "Caja de " + cantidadPorCaja;
+    OlCarrito.innerHTML = "Caja de " + cantidadPorCaja;s
 };
 
 function agregarSabor(saborParam) {
@@ -54,6 +54,18 @@ function agregarSabor(saborParam) {
     localStorage.setItem(sabor, cantidadTotalBombon);
     carrito[sabor] = cantidadTotalBombon;
     OlCarrito.innerHTML = armarOLDeCarrito();
+    Toastify({
+        text: "Agregaste " + cantidadAAgregar + " " + sabor,
+        duration: 1000,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+      }).showToast();
 }
 
 function armarOLDeCarrito() {
@@ -66,5 +78,7 @@ function armarOLDeCarrito() {
 
 ListaDeBombones.forEach((bombon) => {
     document.getElementById(`botonAgregar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => agregarSabor(bombon.sabor));
-})
-
+    
+});
+ 
+inicializarCarrito();

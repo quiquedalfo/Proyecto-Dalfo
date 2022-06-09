@@ -1,3 +1,5 @@
+fetch("/ListaDeBombones.json").then(resp=>resp.json()).then(data=> console.log(data));
+
 class Bombon {
     constructor(id, sabor, chocolate, color, color2, codigo,precio) {
       this.id = id;
@@ -8,9 +10,9 @@ class Bombon {
       this.codigo = codigo;
       this.precio = precio;
     }
-  };
+  }
   
-  //Lista de bombones con Detalles
+//Lista de bombones con Detalles
   const ListaDeBombones = [
     new Bombon (1,"Limon", "Chocolate Blanco", "Amarillo", "Blanco", "LIM", 120),
     new Bombon (2,"Manzana", "Chocolate Blanco", "Verde", "Rojo", "MAN", 120),
@@ -34,7 +36,6 @@ function inicializarCarrito() {
             carrito[bombon.sabor] = parseInt(localStorage.getItem(bombon.sabor.replace(/\s/g, "")))
     }) 
 }
-
 const OlCarrito = document.getElementById("ListaCarrito");
 let total = 0;
 
@@ -68,17 +69,38 @@ function agregarSabor(saborParam) {
       }).showToast();
 }
 
-function armarOLDeCarrito() {
-    let lista = []
-   Object.keys(carrito).forEach((sabor) => {
-        lista.push(`<li> ${sabor} x ${carrito[sabor]} </li>`);
-    })
-    return lista.join('\n');
-}
+
+
 
 ListaDeBombones.forEach((bombon) => {
-    document.getElementById(`botonAgregar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => agregarSabor(bombon.sabor));
-    
+    document.getElementById(`botonAgregar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => agregarSabor(bombon.sabor))
+
+    document.getElementById(`botonBorrar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => borrar(bombon.sabor));
+  
 });
- 
+
+/*const borrar = (saborParam) =>{
+  let sabor = saborParam.replace(/\s/g, "");
+  document.getElementById (`botonBorrar${sabor}`)
+  let cantidadActual = parseInt(localStorage.getItem(sabor)) || 0;
+  let cantidadABorrar = parseInt(document.getElementById(`cantidad${sabor}`).value);
+  let cantidadTotalBombon = cantidadActual - cantidadABorrar;
+  total += parseInt(cantidadTotalBombon);
+  localStorage.setItem(sabor, cantidadTotalBombon);
+  localStorage.setItem("total", cantidadTotalBombon);
+  carrito[sabor] = cantidadTotalBombon;
+  OlCarrito.innerHTML = armarOLDeCarrito();
+  
+
+}
+
+*/
+
+function armarOLDeCarrito() {
+  let lista = []
+ Object.keys(carrito).forEach((sabor) => {
+      lista.push(`<li> ${sabor} x ${carrito[sabor]} </li>`);
+  })
+  return lista.join('\n');
+}
 inicializarCarrito();

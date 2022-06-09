@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1,
+        "sabor" : "Limon",
+        "chocolate" : "Chocolate Blanco",
+        "color" : "Amarillo",
+        "color2" : "Blanco",
+        "codigo" : "LIM",
+        "precio" : 120
+    },
+    {
+        "id": 2,
+        "sabor" : "Manzana",
+        "chocolate" : "Chocolate Blanco",
+        "color" : "Verde",
+        "color2" : "Rojo",
+        "codigo" : "MAN",
+        "precio" : 120
+    },
+    {
+
+        "id": 3,
+        "sabor" : "Nuez",
+        "chocolate" : "Chocolate Blanco",
+        "color" : "Blanco",
+        "color2" : "Naranja",
+        "codigo" : "NUE",
+        "precio" : 120
+    },
+    {
+
+        "id": 4,
+        "sabor" : "Caju",
+        "chocolate" : "Chocolate Blanco",
+        "color" : "Celeste",
+        "color2" : "Naranja",
+        "codigo" : "CAJ",
+        "precio" : 120
+    },
+    {    
+
+        "id": 5,
+        "sabor" : "Nutella",
+        "chocolate" : "Chocolate con Leche",
+        "color" : "Blanco",
+        "color2" : "Rojo" ,
+        "codigo" : "NUT",
+        "precio" : 120
+    },
+    {
+        "id": 6,
+        "sabor" : "Dulce De Leche",
+        "chocolate" : "Chocolate con Leche",
+        "color" : "Celeste",
+        "color2" : "Blanco" ,
+        "codigo" : "DDL",
+        "precio" : 120
+    },
+    {   
+
+        "id": 7,
+        "sabor" : "Frutos Rojos",
+        "chocolate" :  "Chocolate con Leche",
+        "color" : "Rojo",
+        "color2" : "Rosa",
+        "codigo" : "F.R",
+        "precio" : 120
+    },
+    {  
+
+        "id": 8,
+        "sabor" : "Toffee",
+        "chocolate" : "Chocolate con Leche",
+        "color" :  "Naranja",
+        "color2" : "Rojo" ,
+        "codigo" : "TOF",
+        "precio" : 120
+    },
+    {   
+
+        "id": 9,
+        "sabor" : "Naranja",
+        "chocolate" : "Chocolate Amargo",
+        "color" : "Naranja",
+        "color2" : "Verde",
+        "codigo" : "NAR",
+        "precio" : 120
+    },
+    {   
+      
+
+        "id": 10,
+        "sabor" : "Banana",
+        "chocolate" : "Chocolate Amargo",
+        "color" : "Amarillo",
+        "color2" :  "Negro",
+        "codigo" : "BNN",
+        "precio" : 120
+    },
+    {   
+
+        "id": 11,
+        "sabor" : "Almendra",
+        "chocolate" : "Chocolate Amargo",
+        "color" : "Rojo",
+        "color2" : "Amarillo",
+        "codigo" : "ALM",
+        "precio" : 120
+    },
+    {   
+
+        "id": 12 ,
+        "sabor" : "Cafe",
+        "chocolate" : "Chocolate Amargo",
+        "color" : "Blanco",
+        "color2" : "Marron" ,
+        "codigo" : "CAF",
+        "precio" : 120
+    }
+  ]

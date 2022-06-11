@@ -1,0 +1,824 @@
+/*
+ colores a usar:
+ #48331e marron logo
+ #8c6239 marron claro logo
+ #e37d8b rosa logo
+ #ffc0cb rosa suave
+ #ffffff blanco
+ */
+body {
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0%;
+  padding: 4%;
+  background-image: url(../imagenes/fondo.JPG);
+  background-size: 25%;
+}
+
+nav ul li {
+  background-color: pink;
+  font-size: 3vw;
+  width: auto;
+  border: 0.3vw #48331e solid;
+  border-radius: 15px;
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  padding: 0.4vw 1.5vw 0.4vw 1.5vw;
+  line-height: normal;
+}
+
+nav ul li :hover {
+  color: #48331e;
+}
+
+nav a {
+  color: #48331e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  line-height: normal;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: normal;
+}
+
+.titulo #torre {
+  margin: 2% 0 0 0;
+  width: 20%;
+  height: auto;
+}
+
+.titulo #Dalfo {
+  color: #ffffff;
+  font-size: 10vw;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 800;
+  font-family: "Dosis", sans-serif;
+}
+
+#novedades {
+  text-align: center;
+  border-color: #48331e;
+  border-style: double;
+  border-radius: 5px;
+  width: 35%;
+  margin: 0 5vw 3vw 0;
+  padding: 1vw 0 3vw 0;
+}
+
+#novedades p {
+  padding: 0;
+  margin: 0;
+}
+
+#promociones {
+  text-align: center;
+  border-color: #48331e;
+  border-style: double;
+  border-radius: 5px;
+  width: 35%;
+  padding: 1vw 0 3vw 0;
+  margin-bottom: 3vw;
+}
+
+#promociones p {
+  padding: 0 2vw 0 2vw;
+}
+
+#promociones #ir {
+  padding-top: 5vw;
+}
+
+#river {
+  width: 15vw;
+  padding-top: 2vw;
+}
+
+#boca {
+  width: 15vw;
+  padding-top: 2vw;
+}
+
+#fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#esc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3vw 0 4vw 0;
+}
+
+#esc fieldset {
+  text-align: start;
+  background-color: #ffffff;
+  font-size: 2vw;
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 2vw;
+  border-style: groove;
+  border-color: #48331e;
+}
+
+#esc fieldset label {
+  display: inline-block;
+  width: 20vw;
+}
+
+#esc fieldset #Nombreyapellido {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#esc fieldset #Emailref {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#direccion {
+  text-align: center;
+}
+
+#seguinos {
+  font-size: 3vw;
+  display: block;
+  text-align: center;
+  padding-bottom: 4vw;
+}
+
+#local {
+  display: inline-block;
+  width: 40vw;
+  height: 30vw;
+  padding-bottom: 1vw;
+}
+
+#info {
+  font-size: 2vw;
+  padding-bottom: 3vw;
+}
+
+#info ul {
+  list-style: none;
+}
+
+.Recetas2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15vw 70vw;
+      grid-template-rows: 15vw 70vw;
+      grid-template-areas: "R1"  "RDDL";
+  margin: 3vw 4vw 0 4vw;
+  padding-bottom: 2vw;
+}
+
+.Recetas2 #aprender h3 {
+  text-align: center;
+}
+
+.Recetas2 #aprender h3 #R1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: R1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  font-size: 4vw;
+}
+
+.Recetas2 #RDDL {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: RDDL;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2vw;
+  border: #48331e;
+  border-radius: 2vw;
+  border-style: double;
+  border-width: 1vw;
+}
+
+.Recetas2 #RDDL h4 {
+  font-size: 5vw;
+  text-decoration: underline;
+}
+
+.Recetas2 #RDDL table {
+  width: 50vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 2vw;
+}
+
+.Recetas2 #RDDL table #instrucciones {
+  width: 50vw;
+}
+
+.Recetas2 img {
+  width: 20vw;
+  height: auto;
+  padding-top: 2vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#nombre {
+  height: auto;
+  width: 16vw;
+  font-size: 3vw;
+  font-family: "Dosis", sans-serif;
+}
+
+.sabores {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 30vw 35vw 35vw 35vw 35vw;
+      grid-template-rows: 30vw 35vw 35vw 35vw 35vw;
+      grid-template-areas: "A1 A1 A1"  "B1 B2 B3" "C1 C2 C3" "D1 D2 D3" "E1 E2 E3";
+  margin: 0 1vw 0 1vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  justify-items: center;
+  padding-bottom: 5vw;
+}
+
+.gridcomponente, #B1, #B2, #B3, #C1, #C2, #C3, #D1, #D2, #D3, #E1, #E2, #E3 {
+  border-color: #48331e;
+  border-style: double;
+  border-radius: 3px;
+}
+
+.gridcomponente img, #B1 img, #B2 img, #B3 img, #C1 img, #C2 img, #C3 img, #D1 img, #D2 img, #D3 img, #E1 img, #E2 img, #E3 img {
+  width: 13vw;
+  height: auto;
+}
+
+.gridcomponente p, #B1 p, #B2 p, #B3 p, #C1 p, #C2 p, #C3 p, #D1 p, #D2 p, #D3 p, #E1 p, #E2 p, #E3 p {
+  font-size: 2vw;
+  padding-top: 3%;
+}
+
+#A1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: A1;
+  padding-top: 5%;
+}
+
+#A1 div {
+  padding-top: 2vw;
+}
+
+#A1 select {
+  height: auto;
+  width: 16vw;
+  font-size: 3vw;
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+
+#B1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: B1;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#B2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: B2;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#B3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: B3;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#C1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: C1;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#C2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: C2;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#C3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: C3;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#D1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: D1;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#D2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: D2;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#D3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: D3;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#E1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: E1;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#E2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: E2;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#E3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: E3;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
+}
+
+#carrito {
+  padding-bottom: 10vw;
+}
+
+@-webkit-keyframes NOSI1 {
+  0% {
+    background-image: url(../imagenes/logo-australia2.jpg);
+  }
+  30% {
+    background-image: url(../imagenes/Logo-australia.jpg);
+  }
+  60% {
+    background-image: url(../imagenes/IG.jpg);
+  }
+}
+
+@keyframes NOSI1 {
+  0% {
+    background-image: url(../imagenes/logo-australia2.jpg);
+  }
+  30% {
+    background-image: url(../imagenes/Logo-australia.jpg);
+  }
+  60% {
+    background-image: url(../imagenes/IG.jpg);
+  }
+}
+
+div #NOSI1 {
+  width: 25vw;
+  height: 25vw;
+  background-image: url(../imagenes/logo-australia2.jpg);
+  background-size: contain;
+  -webkit-animation-name: NOSI1;
+          animation-name: NOSI1;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  display: inline-block;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+div p {
+  line-height: normal;
+  text-align: center;
+  margin: 0 10vw 0 10vw;
+}
+
+.carousel-item img {
+  margin: auto;
+  width: 15vw;
+  height: auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+#NOSI2 {
+  margin-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+#NOSI2 img {
+  width: 25vw;
+  height: auto;
+}
+
+h2 {
+  font-weight: 600;
+  line-height: normal;
+}
+
+h3 {
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h1 {
+  line-height: normal;
+}
+
+.carousel-control-prev {
+  margin-left: 20vw;
+}
+
+.carousel-control-next {
+  margin-right: 20vw;
+}
+
+/* 
+    From cssbuttons.io by @alexmaracinaru
+    Para pagina productos #Agregar
+*/
+.cta {
+  border: none;
+  background: none;
+  width: auto;
+  padding-top: 2vw;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.cta span {
+  letter-spacing: 0.5vw;
+  font-size: 1vw;
+  text-transform: uppercase;
+  justify-items: center;
+}
+
+footer {
+  background-color: #ffc0cb;
+  margin: 0%;
+  padding: 0%;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+}
+
+footer div {
+  padding: 0 0 0 0;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  margin-top: 1vw;
+}
+
+footer i {
+  margin-left: 3vw;
+  font-size: 3vw;
+}
+
+footer p {
+  margin-top: 2vw;
+}
+
+footer #topof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2vw;
+  font-style: none;
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  background: #ffc0cb;
+  font-weight: 600;
+  border-radius: 1vw;
+  float: right;
+  margin-right: 3vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home #novedades {
+    width: 85vw;
+    height: auto;
+    margin: 0;
+  }
+  .home #novedades #NOV #TNov {
+    font-size: 5vw;
+    width: 70vw;
+    text-align: center;
+    margin-right: 0;
+    padding: 0;
+  }
+  .home #novedades #fotos #boca {
+    width: 40vw;
+  }
+  .home #novedades #fotos #river {
+    width: 40vw;
+  }
+  .home #promociones {
+    width: 85vw;
+    height: auto;
+    margin: 4vw 0 5vw 0;
+  }
+  .sabores {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 20vw 45vw 45vw 45vw 45vw 45vw 45vw;
+        grid-template-rows: 20vw 45vw 45vw 45vw 45vw 45vw 45vw;
+        grid-template-areas: "A1 A1"  "B1 B2" "B3 C1" "C2 C3" "D1 D2" "D3 E1" "E2 E3";
+  }
+  #B1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: B1;
+    width: 45vw;
+    height: 180px;
+  }
+  #B1 div img {
+    width: 20vw;
+  }
+  #B2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: B2;
+    width: 45vw;
+    height: 180px;
+  }
+  #B2 div img {
+    width: 20vw;
+  }
+  #B3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: B3;
+    width: 45vw;
+    height: 180px;
+  }
+  #B3 div img {
+    width: 20vw;
+  }
+  #C1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: C1;
+    width: 45vw;
+    height: 180px;
+  }
+  #C1 div img {
+    width: 20vw;
+  }
+  #C2 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: C2;
+    width: 45vw;
+    height: 180px;
+  }
+  #C2 div img {
+    width: 20vw;
+  }
+  #C3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: C3;
+    width: 45vw;
+    height: 180px;
+  }
+  #C3 div img {
+    width: 20vw;
+  }
+  #D1 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: D1;
+    width: 45vw;
+    height: 180px;
+  }
+  #D1 div img {
+    width: 20vw;
+  }
+  #D2 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: D2;
+    width: 45vw;
+    height: 180px;
+  }
+  #D2 div img {
+    width: 20vw;
+  }
+  #D3 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: D3;
+    width: 45vw;
+    height: 180px;
+  }
+  #D3 div img {
+    width: 20vw;
+  }
+  #E1 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: E1;
+    width: 45vw;
+    height: 180px;
+  }
+  #E1 div img {
+    width: 20vw;
+  }
+  #E2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: E2;
+    width: 45vw;
+    height: 180px;
+  }
+  #E2 div img {
+    width: 20vw;
+  }
+  #E3 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+    grid-area: E3;
+    width: 45vw;
+    height: 180px;
+  }
+  #E3 div img {
+    width: 20vw;
+  }
+  div p {
+    font-size: 3vw;
+  }
+  .Recetas2 {
+    height: 150vw;
+  }
+  .Recetas2 #RDDL {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 3vw;
+    margin-top: 2vw;
+  }
+  .Recetas2 #RDDL img {
+    width: 40vw;
+  }
+  .Recetas2 #RDDL h5 {
+    font-size: 4vw;
+    margin: 3vw 0 0 0;
+  }
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  text-align: center;
+  font-size: 5vw;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  text-align: center;
+  font-size: 5vw;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Dosis", sans-serif;
+  color: #48331e;
+  text-align: center;
+  font-size: 3vw;
+  margin: 0;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 2vw;
+  margin: 0;
+}
+
+main {
+  background-color: #e37d8b;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  overflow-x: visible;
+}
+/*# sourceMappingURL=estilo.css.map */

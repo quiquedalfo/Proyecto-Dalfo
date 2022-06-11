@@ -1,32 +1,4 @@
-fetch("/ListaDeBombones.json").then(resp=>resp.json()).then(data=> console.log(data));
-
-class Bombon {
-    constructor(id, sabor, chocolate, color, color2, codigo,precio) {
-      this.id = id;
-      this.sabor = sabor;
-      this.chocolate = chocolate;
-      this.color = color;
-      this.color2 = color2;
-      this.codigo = codigo;
-      this.precio = precio;
-    }
-  }
-  
-//Lista de bombones con Detalles
-  const ListaDeBombones = [
-    new Bombon (1,"Limon", "Chocolate Blanco", "Amarillo", "Blanco", "LIM", 120),
-    new Bombon (2,"Manzana", "Chocolate Blanco", "Verde", "Rojo", "MAN", 120),
-    new Bombon (3,"Nuez", "Chocolate Blanco", "Blanco", "Naranja", "NUE", 120),
-    new Bombon (4,"Caju", "Chocolate Blanco", "Celeste", "Naranja", "CAJ", 120),
-    new Bombon (5,"Nutella", "Chocolate con Leche", "Blanco" , "Rojo" , "NUT", 120),
-    new Bombon (6,"Dulce De Leche", "Chocolate con Leche", "Celeste" , "Blanco" , "DDL", 120),
-    new Bombon (7,"Frutos Rojos", "Chocolate con Leche", "Rojo" , "Rosa" , "F.R", 120),
-    new Bombon (8,"Toffee", "Chocolate con Leche", "Naranja" , "Rojo" , "TOF", 120),
-    new Bombon (9,"Naranja", "Chocolate Amargo", "Naranja" , "Verde" , "NAR", 120),
-    new Bombon (10,"Banana", "Chocolate Amargo", "Amarillo" , "Negro" , "BNN", 120),
-    new Bombon (11,"Almendra", "Chocolate Amargo", "Rojo" , "Amarillo" , "ALM", 120),
-    new Bombon (12,"Cafe", "Chocolate Amargo", "Blanco" , "Marron" , "CAF", 120),
-  ];
+const ListaDeBombones = fetch("/ListaDeBombones.json").then(resp=>resp.json()).then(data=> console.log(data));
 
 let carrito = [];
 function inicializarCarrito() {
@@ -39,12 +11,19 @@ function inicializarCarrito() {
 const OlCarrito = document.getElementById("ListaCarrito");
 let total = 0;
 
-//js en productos.html
+//Seleccion de tamaño
 function revelarValor(cantidadPorCaja) {
     localStorage.setItem("Unidades por caja ", cantidadPorCaja);
-    OlCarrito.innerHTML = "Caja de " + cantidadPorCaja;s
+    OlCarrito.innerHTML = "Caja de " + cantidadPorCaja;
 };
+//Botones
+ListaDeBombones.forEach((bombon) => {
+  document.getElementById(`botonAgregar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => agregarSabor(bombon.sabor))
 
+  document.getElementById(`botonBorrar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => borrarSabor(bombon.sabor));
+
+});
+//Boton Agregar
 function agregarSabor(saborParam) {
     let sabor = saborParam.replace(/\s/g, "");
     document.getElementById (`botonAgregar${sabor}`)
@@ -52,6 +31,7 @@ function agregarSabor(saborParam) {
     let cantidadAAgregar = parseInt(document.getElementById(`cantidad${sabor}`).value);
     let cantidadTotalBombon = cantidadActual + cantidadAAgregar;
     total += parseInt(cantidadAAgregar);
+    localStorage.setItem("Total", total);
     localStorage.setItem(sabor, cantidadTotalBombon);
     carrito[sabor] = cantidadTotalBombon;
     OlCarrito.innerHTML = armarOLDeCarrito();
@@ -67,39 +47,41 @@ function agregarSabor(saborParam) {
           background: "linear-gradient(to right, #00b09b, #96c93d)",
         },
       }).showToast();
+      
 }
-
-
-
-
-ListaDeBombones.forEach((bombon) => {
-    document.getElementById(`botonAgregar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => agregarSabor(bombon.sabor))
-
-    document.getElementById(`botonBorrar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => borrar(bombon.sabor));
-  
-});
-
-/*const borrar = (saborParam) =>{
+//Boton borrar
+function borrarSabor(saborParam) {
   let sabor = saborParam.replace(/\s/g, "");
   document.getElementById (`botonBorrar${sabor}`)
   let cantidadActual = parseInt(localStorage.getItem(sabor)) || 0;
   let cantidadABorrar = parseInt(document.getElementById(`cantidad${sabor}`).value);
   let cantidadTotalBombon = cantidadActual - cantidadABorrar;
-  total += parseInt(cantidadTotalBombon);
+  total -= parseInt(cantidadABorrar);
+  localStorage.setItem("Total", total);
   localStorage.setItem(sabor, cantidadTotalBombon);
-  localStorage.setItem("total", cantidadTotalBombon);
   carrito[sabor] = cantidadTotalBombon;
   OlCarrito.innerHTML = armarOLDeCarrito();
-  
-
+  Toastify({
+      text: "Eliminaste " + cantidadABorrar + " " + sabor,
+      duration: 1000,
+      newWindow: true,
+      close: true,
+      gravity: "top",
+      position: "right",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right, #fb0303, #fb6e03)",
+      },
+    }).showToast();
 }
 
-*/
+
 
 function armarOLDeCarrito() {
   let lista = []
  Object.keys(carrito).forEach((sabor) => {
-      lista.push(`<li> ${sabor} x ${carrito[sabor]} </li>`);
+      lista.push(`<li> ${sabor} x ${carrito[sabor]} </li> <br>
+      <Total ${precioFinal}`);
   })
   return lista.join('\n');
 }

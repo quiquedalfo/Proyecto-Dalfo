@@ -1,4 +1,6 @@
-const ListaDeBombones = fetch("/ListaDeBombones.json").then(resp=>resp.json()).then(data=> console.log(data));
+
+fetch("/listaDeBombones.json").then(resp=>resp.json()).then(data=> console.log(data));
+// no se como seguir aca tenia una 
 
 let carrito = [];
 function inicializarCarrito() {

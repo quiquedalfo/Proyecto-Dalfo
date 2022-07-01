@@ -25,10 +25,11 @@ class Bombon {
   ]; 
   
   localStorage.clear();
-  let UlCarrito = document.getElementById("ListaCarrito");
-  const pCarrito = document.getElementById("TotalCarrito");
   const CajaX12 = 1800;
   const CajaX25 = 3000;
+  let UlCarrito = document.getElementById("ListaCarrito");
+  let pCarrito = document.getElementById("TotalCarrito");
+  let pCantidadCarrito = document.getElementById("cantidadCarrito")
   let precioFinal = 0;
   let carrito = [];
   let total = 0;
@@ -60,6 +61,8 @@ class Bombon {
     document.getElementById(`botonBorrar${bombon.sabor.replace(/\s/g, "")}`).addEventListener("click", () => borrarSabor(bombon.sabor));
   
   });
+  document.getElementById("botonVaciar").addEventListener("click", () => vaciarCarrito());
+ 
   //Boton Agregar
   function agregarSabor(saborParam) {
       let sabor = saborParam.replace(/\s/g, "");
@@ -72,6 +75,7 @@ class Bombon {
       localStorage.setItem(sabor, cantidadTotalBombon);
       carrito[sabor] = cantidadTotalBombon;
       UlCarrito.innerHTML = armarOLDeCarrito();
+
       Toastify({
           text: "Agregaste " + cantidadAAgregar + " " + sabor,
           duration: 1000,
@@ -90,7 +94,6 @@ class Bombon {
         });
       }
   }
-
   //Boton borrar
   function borrarSabor(saborParam) {
     let sabor = saborParam.replace(/\s/g, "");
@@ -120,9 +123,6 @@ class Bombon {
         },
       }).showToast();
   }
-  
-  document.getElementById("botonVaciar").addEventListener("click", () => vaciarCarrito());
-
   function vaciarCarrito() {
     localStorage.clear();
     UlCarrito.replaceChildren();

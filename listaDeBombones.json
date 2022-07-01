@@ -49,7 +49,7 @@
     },
     {
         "id": 6,
-        "sabor" : "Dulce De Leche",
+        "sabor" : "DulceDeLeche",
         "chocolate" : "Chocolate con Leche",
         "color" : "Celeste",
         "color2" : "Blanco" ,
@@ -59,11 +59,11 @@
     {   
 
         "id": 7,
-        "sabor" : "Frutos Rojos",
+        "sabor" : "FrutosRojos",
         "chocolate" :  "Chocolate con Leche",
         "color" : "Rojo",
         "color2" : "Rosa",
-        "codigo" : "F.R",
+        "codigo" : "FFR",
         "precio" : 120
     },
     {  
@@ -73,7 +73,7 @@
         "chocolate" : "Chocolate con Leche",
         "color" :  "Naranja",
         "color2" : "Rojo" ,
-        "codigo" : "TOF",
+        "codigo" : "TFF",
         "precio" : 120
     },
     {   
@@ -94,7 +94,7 @@
         "chocolate" : "Chocolate Amargo",
         "color" : "Amarillo",
         "color2" :  "Negro",
-        "codigo" : "BNN",
+        "codigo" : "BAN",
         "precio" : 120
     },
     {   

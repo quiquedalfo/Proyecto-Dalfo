@@ -9,20 +9,12 @@ class Bombon {
     this.precio = precio;
   }
 };
-const ListaDeBombones = [
-  new Bombon (1,"Limon","Chocolate Blanco","Amarillo","Blanco","LIM",120),
-  new Bombon (2,"Manzana","Chocolate Blanco","Verde","Rojo","MAN",120),
-  new Bombon (3,"Nuez","Chocolate Blanco","Blanco","Naranja","NUE",120),
-  new Bombon (4,"Caju","Chocolate Blanco","Celeste","Naranja","CAJ",120),
-  new Bombon (5,"Nutella","Chocolate con leche","Blanco","Rojo","NUT",120),
-  new Bombon (6,"DulceDeLeche","Chocolate con leche","Celeste","DDL","LIM",120),
-  new Bombon (7,"FrutosRojos","Chocolate con leche","Rojo","Rosa","FFR",120),
-  new Bombon (8,"Toffee","Chocolate con leche","Naranja","Rojo","TFF",120),
-  new Bombon (9,"Naranja","Chocolate amargo","Naranja","Verde","NAR",120),
-  new Bombon (10,"Banana","Chocolate amargo","Amarillo","Negro","BAN",120),
-  new Bombon (11,"Almendra","Chocolate amargo","Rojo","Amarillo","ALM",120),
-  new Bombon (12,"Cafe","Chocolate amargo","Blanco","Marron","CAF",120),
-]; 
+let ListaDeBombones = [];
+let Bombones = async () => {
+  const resp = await fetch("../listaDeBombones.json")
+  ListaDeBombones = await resp.json()
+}
+Bombones();
 
 const CajaX12 = 1800;
 const CajaX25 = 3000;
